@@ -1,0 +1,54 @@
+|Lab2
+SW[0] => SW[0].IN1
+SW[1] => ~NO_FANOUT~
+SW[2] => ~NO_FANOUT~
+SW[3] => ~NO_FANOUT~
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+SW[8] => SW[8].IN1
+SW[9] => SW[9].IN1
+KEY[0] => KEY[0].IN1
+LEDR[0] <= controlUnit:try.port14
+LEDR[1] <= controlUnit:try.port14
+LEDR[2] <= controlUnit:try.port13
+LEDR[3] <= controlUnit:try.port12
+LEDR[4] <= controlUnit:try.port11
+LEDR[5] <= controlUnit:try.port10
+LEDR[6] <= controlUnit:try.port9
+LEDR[7] <= controlUnit:try.port8
+LEDR[8] <= controlUnit:try.port7
+LEDR[9] <= controlUnit:try.port6
+LEDG[0] <= controlUnit:try.port15
+LEDG[1] <= controlUnit:try.port15
+LEDG[2] <= controlUnit:try.port15
+LEDG[3] <= controlUnit:try.port15
+
+
+|Lab2|controlUnit:try
+IR[0] => Decoder0.IN2
+IR[1] => Decoder0.IN1
+IR[2] => Decoder0.IN0
+Enter => Selector1.IN4
+Enter => Selector2.IN2
+Aeq0 => Selector0.IN3
+Apos => Selector0.IN4
+clock => state~1.DATAIN
+reset => state~3.DATAIN
+IRload <= IRload.DB_MAX_OUTPUT_PORT_TYPE
+JMPmux <= JMPmux.DB_MAX_OUTPUT_PORT_TYPE
+PCload <= Selector0.DB_MAX_OUTPUT_PORT_TYPE
+Meminst <= Meminst.DB_MAX_OUTPUT_PORT_TYPE
+MemWr <= MemWr.DB_MAX_OUTPUT_PORT_TYPE
+Aload <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Sub <= Sub.DB_MAX_OUTPUT_PORT_TYPE
+Halt <= Halt.DB_MAX_OUTPUT_PORT_TYPE
+Asel[0] <= Asel[0].DB_MAX_OUTPUT_PORT_TYPE
+Asel[1] <= Asel[1].DB_MAX_OUTPUT_PORT_TYPE
+displayState[0] <= WideOr9.DB_MAX_OUTPUT_PORT_TYPE
+displayState[1] <= WideOr8.DB_MAX_OUTPUT_PORT_TYPE
+displayState[2] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+displayState[3] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+

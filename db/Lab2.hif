@@ -1,0 +1,141 @@
+Quartus II
+Version 9.1 Build 222 10/21/2009 SJ Web Edition
+11
+980
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+Lab2
+# storage
+db|Lab2.(0).cnf
+db|Lab2.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+download.v
+a67d46ce2faf7d64283099fc848f46
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+controlUnit
+# storage
+db|Lab2.(1).cnf
+db|Lab2.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+controlunit.v
+6f1dbd88c2fa4da4fc5b5577720de13
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+start
+0
+PARAMETER_SIGNED_DEC
+DEF
+fetch
+1
+PARAMETER_SIGNED_DEC
+DEF
+decode
+2
+PARAMETER_SIGNED_DEC
+DEF
+load
+8
+PARAMETER_SIGNED_DEC
+DEF
+store
+9
+PARAMETER_SIGNED_DEC
+DEF
+add
+10
+PARAMETER_SIGNED_DEC
+DEF
+sub
+11
+PARAMETER_SIGNED_DEC
+DEF
+Input
+12
+PARAMETER_SIGNED_DEC
+DEF
+jz
+13
+PARAMETER_SIGNED_DEC
+DEF
+jpos
+14
+PARAMETER_SIGNED_DEC
+DEF
+halt
+15
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+controlUnit:try
+}
+# macro_sequence
+
+# end
+# complete
+

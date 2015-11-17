@@ -1,0 +1,66 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 1.471 ns
+From           : SW[9]
+To             : controlUnit:try|state.Input
+From Clock     : --
+To Clock       : KEY[0]
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 11.018 ns
+From           : controlUnit:try|state.decode
+To             : LEDG[1]
+From Clock     : KEY[0]
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 7.693 ns
+From           : SW[4]
+To             : LEDR[7]
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 0.384 ns
+From           : SW[6]
+To             : controlUnit:try|state.start
+From Clock     : --
+To Clock       : KEY[0]
+Failed Paths   : 0
+
+Type           : Clock Setup: 'KEY[0]'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 405.02 MHz ( period = 2.469 ns )
+From           : controlUnit:try|state.decode
+To             : controlUnit:try|state.start
+From Clock     : KEY[0]
+To Clock       : KEY[0]
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+
