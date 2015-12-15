@@ -1,5 +1,5 @@
 
-State Machine - |Lab2|controlUnit:try|state
+State Machine - |Lab2|controlUnit:CU|state
 Name state.halt state.jpos state.jz state.Input state.sub state.add state.store state.load state.decode state.fetch state.start 
 state.start 0 0 0 0 0 0 0 0 0 0 0 
 state.fetch 0 0 0 0 0 0 0 0 0 1 1 

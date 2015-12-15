@@ -1,4 +1,4 @@
-module Lab2(
+module download(
 	input [9:0] SW,								//IR and Enter is the control signal.
 	input [0:0] KEY,							//Aeq0 and Apos is value of part of PCload.
 	output [9:0] LEDR,													//status signal

@@ -3,7 +3,7 @@ module controlUnit(
 	input Enter, Aeq0, Apos, clock, reset,		//Aeq0 and Apos is value of part of PCload.
 	output reg IRload, JMPmux, PCload, Meminst, MemWr, Aload, Sub, Halt,	//status signal
 	output reg [1:0] Asel,													//status signal
-	output wire [3:0] displayState											//state
+	output wire [3:0] displayState										//state
 	);
 	
 	reg [3:0] nextstate,state;

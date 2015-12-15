@@ -5,6 +5,6 @@ module Lab2(
 	output [3:0] LEDG											//state
 	);
 	
-	controlUnit	try(SW[9:7],SW[6],SW[5],SW[4],SW[0],KEY[0],LEDR[9],LEDR[8],LEDR[7],LEDR[6],LEDR[5],LEDR[4],LEDR[3],LEDR[2],LEDR[1:0],LEDG[3:0]);
+	controlUnit	try(SW[9:7],SW[6],SW[5],SW[4],KEY[0],SW[0],LEDR[9],LEDR[8],LEDR[7],LEDR[6],LEDR[5],LEDR[4],LEDR[3],LEDR[2],LEDR[1:0],LEDG[3:0]);
 	
 endmodule
