@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 7.404 ns
+From           : KEY[1]
+To             : Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[4][4]
+From Clock     : --
+To Clock       : KEY[0]
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 7.874 ns
+From           : Lab2:showReselt|dataPath:DP|instructionSetOperation:part3|register:ARegister|out[3]
+To             : LEDR[3]
+From Clock     : KEY[0]
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 0.396 ns
+From           : SW[1]
+To             : Lab2:showReselt|dataPath:DP|instructionSetOperation:part3|register:ARegister|out[0]
+From Clock     : --
+To Clock       : KEY[0]
+Failed Paths   : 0
+
+Type           : Clock Setup: 'KEY[0]'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 142.29 MHz ( period = 7.028 ns )
+From           : Lab2:showReselt|controlUnit:CU|state.decode
+To             : Lab2:showReselt|dataPath:DP|memRAM:part2|Q[1]
+From Clock     : KEY[0]
+To Clock       : KEY[0]
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

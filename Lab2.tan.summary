@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 9.255 ns
+Actual Time    : 7.680 ns
 From           : In
-To             : dataPath:DP|memRAM:part2|REGISTER[3][2]
+To             : dataPath:DP|memRAM:part2|REGISTER[0][5]
 From Clock     : --
 To Clock       : Clock
 Failed Paths   : 0
@@ -15,7 +15,7 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 9.902 ns
+Actual Time    : 9.499 ns
 From           : dataPath:DP|instructionSetOperation:part3|register:ARegister|out[6]
 To             : Output[6]
 From Clock     : Clock
@@ -25,9 +25,9 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : -3.693 ns
-From           : Enter
-To             : controlUnit:CU|state.Input
+Actual Time    : -3.924 ns
+From           : In
+To             : dataPath:DP|memRAM:part2|REGISTER[7][2]
 From Clock     : --
 To Clock       : Clock
 Failed Paths   : 0
@@ -35,9 +35,9 @@ Failed Paths   : 0
 Type           : Clock Setup: 'Clock'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 132.91 MHz ( period = 7.524 ns )
+Actual Time    : 144.65 MHz ( period = 6.913 ns )
 From           : controlUnit:CU|state.decode
-To             : dataPath:DP|memRAM:part2|Q[6]
+To             : dataPath:DP|memRAM:part2|Q[3]
 From Clock     : Clock
 To Clock       : Clock
 Failed Paths   : 0
