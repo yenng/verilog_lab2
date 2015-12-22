@@ -32,7 +32,7 @@ module Lab2_tb();
 	  In <= 0;
 	  @(posedge Clock);
 	  @(negedge Clock);
-	  Reset <= 0;  In <= 0;
+	  Reset <= 0;  In <= 1;
 	end
 
 	initial begin

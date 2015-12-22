@@ -1,5 +1,5 @@
 Fitter report for Lab2Download
-Mon Dec 21 13:51:46 2015
+Tue Dec 22 18:23:57 2015
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -62,18 +62,18 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Fitter Summary                                                               ;
 +------------------------------------+-----------------------------------------+
-; Fitter Status                      ; Successful - Mon Dec 21 13:51:46 2015   ;
+; Fitter Status                      ; Successful - Tue Dec 22 18:23:57 2015   ;
 ; Quartus II Version                 ; 9.1 Build 222 10/21/2009 SJ Web Edition ;
 ; Revision Name                      ; Lab2Download                            ;
 ; Top-level Entity Name              ; Lab2Download                            ;
 ; Family                             ; Cyclone II                              ;
 ; Device                             ; EP2C20F484C7                            ;
 ; Timing Models                      ; Final                                   ;
-; Total logic elements               ; 401 / 18,752 ( 2 % )                    ;
-;     Total combinational functions  ; 287 / 18,752 ( 2 % )                    ;
-;     Dedicated logic registers      ; 296 / 18,752 ( 2 % )                    ;
-; Total registers                    ; 296                                     ;
-; Total pins                         ; 30 / 315 ( 10 % )                       ;
+; Total logic elements               ; 452 / 18,752 ( 2 % )                    ;
+;     Total combinational functions  ; 337 / 18,752 ( 2 % )                    ;
+;     Dedicated logic registers      ; 322 / 18,752 ( 2 % )                    ;
+; Total registers                    ; 322                                     ;
+; Total pins                         ; 31 / 315 ( 10 % )                       ;
 ; Total virtual pins                 ; 0                                       ;
 ; Total memory bits                  ; 0 / 239,616 ( 0 % )                     ;
 ; Embedded Multiplier 9-bit elements ; 0 / 52 ( 0 % )                          ;
@@ -160,7 +160,6 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Location     ;                ;              ; CLOCK_24[1]   ; PIN_A12       ; QSF Assignment ;
 ; Location     ;                ;              ; CLOCK_27[0]   ; PIN_D12       ; QSF Assignment ;
 ; Location     ;                ;              ; CLOCK_27[1]   ; PIN_E12       ; QSF Assignment ;
-; Location     ;                ;              ; CLOCK_50      ; PIN_L1        ; QSF Assignment ;
 ; Location     ;                ;              ; DRAM_ADDR[0]  ; PIN_W4        ; QSF Assignment ;
 ; Location     ;                ;              ; DRAM_ADDR[10] ; PIN_W3        ; QSF Assignment ;
 ; Location     ;                ;              ; DRAM_ADDR[11] ; PIN_N6        ; QSF Assignment ;
@@ -407,7 +406,6 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; I/O Standard ;                ;              ; CLOCK_24[0]   ; LVTTL         ; QSF Assignment ;
 ; I/O Standard ;                ;              ; CLOCK_24[1]   ; LVTTL         ; QSF Assignment ;
 ; I/O Standard ;                ;              ; CLOCK_27[1]   ; LVTTL         ; QSF Assignment ;
-; I/O Standard ;                ;              ; CLOCK_50      ; LVTTL         ; QSF Assignment ;
 ; I/O Standard ;                ;              ; EXT_CLOCK     ; LVTTL         ; QSF Assignment ;
 ; I/O Standard ;                ;              ; GPIO_0[0]     ; LVTTL         ; QSF Assignment ;
 ; I/O Standard ;                ;              ; GPIO_0[10]    ; LVTTL         ; QSF Assignment ;
@@ -544,8 +542,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                    ; Value              ;
 +-------------------------+--------------------+
 ; Placement               ;                    ;
-;     -- Requested        ; 0 / 618 ( 0.00 % ) ;
-;     -- Achieved         ; 0 / 618 ( 0.00 % ) ;
+;     -- Requested        ; 0 / 697 ( 0.00 % ) ;
+;     -- Achieved         ; 0 / 697 ( 0.00 % ) ;
 ;                         ;                    ;
 ; Routing (by Connection) ;                    ;
 ;     -- Requested        ; 0 / 0 ( 0.00 % )   ;
@@ -567,86 +565,87 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +----------------+---------+-------------------+-------------------------+-------------------+
-; Top            ; 618     ; 0                 ; N/A                     ; Source File       ;
+; Top            ; 697     ; 0                 ; N/A                     ; Source File       ;
 +----------------+---------+-------------------+-------------------------+-------------------+
 
 
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/Student/Desktop/yen/Lab2Download/Lab2Download.pin.
+The pin-out file can be found in C:/Users/Student/Desktop/yen/Lab2/Lab2Download/Lab2Download.pin.
 
 
-+--------------------------------------------------------------------+
-; Fitter Resource Usage Summary                                      ;
-+---------------------------------------------+----------------------+
-; Resource                                    ; Usage                ;
-+---------------------------------------------+----------------------+
-; Total logic elements                        ; 401 / 18,752 ( 2 % ) ;
-;     -- Combinational with no register       ; 105                  ;
-;     -- Register only                        ; 114                  ;
-;     -- Combinational with a register        ; 182                  ;
-;                                             ;                      ;
-; Logic element usage by number of LUT inputs ;                      ;
-;     -- 4 input functions                    ; 227                  ;
-;     -- 3 input functions                    ; 24                   ;
-;     -- <=2 input functions                  ; 36                   ;
-;     -- Register only                        ; 114                  ;
-;                                             ;                      ;
-; Logic elements by mode                      ;                      ;
-;     -- normal mode                          ; 275                  ;
-;     -- arithmetic mode                      ; 12                   ;
-;                                             ;                      ;
-; Total registers*                            ; 296 / 19,649 ( 2 % ) ;
-;     -- Dedicated logic registers            ; 296 / 18,752 ( 2 % ) ;
-;     -- I/O registers                        ; 0 / 897 ( 0 % )      ;
-;                                             ;                      ;
-; Total LABs:  partially or completely used   ; 31 / 1,172 ( 3 % )   ;
-; User inserted logic elements                ; 0                    ;
-; Virtual pins                                ; 0                    ;
-; I/O pins                                    ; 30 / 315 ( 10 % )    ;
-;     -- Clock pins                           ; 6 / 8 ( 75 % )       ;
-; Global signals                              ; 1                    ;
-; M4Ks                                        ; 0 / 52 ( 0 % )       ;
-; Total block memory bits                     ; 0 / 239,616 ( 0 % )  ;
-; Total block memory implementation bits      ; 0 / 239,616 ( 0 % )  ;
-; Embedded Multiplier 9-bit elements          ; 0 / 52 ( 0 % )       ;
-; PLLs                                        ; 0 / 4 ( 0 % )        ;
-; Global clocks                               ; 1 / 16 ( 6 % )       ;
-; JTAGs                                       ; 0 / 1 ( 0 % )        ;
-; ASMI blocks                                 ; 0 / 1 ( 0 % )        ;
-; CRC blocks                                  ; 0 / 1 ( 0 % )        ;
-; Average interconnect usage (total/H/V)      ; 1% / 1% / 1%         ;
-; Peak interconnect usage (total/H/V)         ; 7% / 6% / 7%         ;
-; Maximum fan-out node                        ; KEY[0]               ;
-; Maximum fan-out                             ; 296                  ;
-; Highest non-global fan-out signal           ; KEY[0]               ;
-; Highest non-global fan-out                  ; 296                  ;
-; Total fan-out                               ; 2043                 ;
-; Average fan-out                             ; 3.09                 ;
-+---------------------------------------------+----------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Usage Summary                                                                                                                 ;
++---------------------------------------------+-------------------------------------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                                           ;
++---------------------------------------------+-------------------------------------------------------------------------------------------------+
+; Total logic elements                        ; 452 / 18,752 ( 2 % )                                                                            ;
+;     -- Combinational with no register       ; 130                                                                                             ;
+;     -- Register only                        ; 115                                                                                             ;
+;     -- Combinational with a register        ; 207                                                                                             ;
+;                                             ;                                                                                                 ;
+; Logic element usage by number of LUT inputs ;                                                                                                 ;
+;     -- 4 input functions                    ; 216                                                                                             ;
+;     -- 3 input functions                    ; 55                                                                                              ;
+;     -- <=2 input functions                  ; 66                                                                                              ;
+;     -- Register only                        ; 115                                                                                             ;
+;                                             ;                                                                                                 ;
+; Logic elements by mode                      ;                                                                                                 ;
+;     -- normal mode                          ; 294                                                                                             ;
+;     -- arithmetic mode                      ; 43                                                                                              ;
+;                                             ;                                                                                                 ;
+; Total registers*                            ; 322 / 19,649 ( 2 % )                                                                            ;
+;     -- Dedicated logic registers            ; 322 / 18,752 ( 2 % )                                                                            ;
+;     -- I/O registers                        ; 0 / 897 ( 0 % )                                                                                 ;
+;                                             ;                                                                                                 ;
+; Total LABs:  partially or completely used   ; 34 / 1,172 ( 3 % )                                                                              ;
+; User inserted logic elements                ; 0                                                                                               ;
+; Virtual pins                                ; 0                                                                                               ;
+; I/O pins                                    ; 31 / 315 ( 10 % )                                                                               ;
+;     -- Clock pins                           ; 6 / 8 ( 75 % )                                                                                  ;
+; Global signals                              ; 3                                                                                               ;
+; M4Ks                                        ; 0 / 52 ( 0 % )                                                                                  ;
+; Total block memory bits                     ; 0 / 239,616 ( 0 % )                                                                             ;
+; Total block memory implementation bits      ; 0 / 239,616 ( 0 % )                                                                             ;
+; Embedded Multiplier 9-bit elements          ; 0 / 52 ( 0 % )                                                                                  ;
+; PLLs                                        ; 0 / 4 ( 0 % )                                                                                   ;
+; Global clocks                               ; 3 / 16 ( 19 % )                                                                                 ;
+; JTAGs                                       ; 0 / 1 ( 0 % )                                                                                   ;
+; ASMI blocks                                 ; 0 / 1 ( 0 % )                                                                                   ;
+; CRC blocks                                  ; 0 / 1 ( 0 % )                                                                                   ;
+; Average interconnect usage (total/H/V)      ; 1% / 1% / 1%                                                                                    ;
+; Peak interconnect usage (total/H/V)         ; 7% / 7% / 6%                                                                                    ;
+; Maximum fan-out node                        ; slowClock:clockOut|outX[0]~clkctrl                                                              ;
+; Maximum fan-out                             ; 289                                                                                             ;
+; Highest non-global fan-out signal           ; Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|multiplexer:Meminst_mux|Output[1]~0 ;
+; Highest non-global fan-out                  ; 80                                                                                              ;
+; Total fan-out                               ; 2237                                                                                            ;
+; Average fan-out                             ; 3.01                                                                                            ;
++---------------------------------------------+-------------------------------------------------------------------------------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Input Pins                                                                                                                                                                                                                                                   ;
-+--------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
-; Name   ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Location assigned by ;
-+--------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
-; KEY[0] ; R22   ; 6        ; 50           ; 10           ; 1           ; 296                   ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; KEY[1] ; R21   ; 6        ; 50           ; 10           ; 2           ; 49                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; SW[0]  ; L22   ; 5        ; 50           ; 14           ; 0           ; 1                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; SW[1]  ; L21   ; 5        ; 50           ; 14           ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; SW[2]  ; M22   ; 6        ; 50           ; 14           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; SW[3]  ; V12   ; 7        ; 26           ; 0            ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; SW[4]  ; W12   ; 7        ; 26           ; 0            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; SW[5]  ; U12   ; 8        ; 26           ; 0            ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; SW[6]  ; U11   ; 8        ; 26           ; 0            ; 3           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; SW[7]  ; M2    ; 1        ; 0            ; 13           ; 3           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; SW[8]  ; M1    ; 1        ; 0            ; 13           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; SW[9]  ; L2    ; 2        ; 0            ; 13           ; 1           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-+--------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Input Pins                                                                                                                                                                                                                                                     ;
++----------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
+; Name     ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Location assigned by ;
++----------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
+; CLOCK_50 ; L1    ; 2        ; 0            ; 13           ; 0           ; 2                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; KEY[0]   ; R22   ; 6        ; 50           ; 10           ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; KEY[1]   ; R21   ; 6        ; 50           ; 10           ; 2           ; 49                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; SW[0]    ; L22   ; 5        ; 50           ; 14           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; SW[1]    ; L21   ; 5        ; 50           ; 14           ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; SW[2]    ; M22   ; 6        ; 50           ; 14           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; SW[3]    ; V12   ; 7        ; 26           ; 0            ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; SW[4]    ; W12   ; 7        ; 26           ; 0            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; SW[5]    ; U12   ; 8        ; 26           ; 0            ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; SW[6]    ; U11   ; 8        ; 26           ; 0            ; 3           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; SW[7]    ; M2    ; 1        ; 0            ; 13           ; 3           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; SW[8]    ; M1    ; 1        ; 0            ; 13           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; SW[9]    ; L2    ; 2        ; 0            ; 13           ; 1           ; 1                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
++----------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -681,7 +680,7 @@ The pin-out file can be found in C:/Users/Student/Desktop/yen/Lab2Download/Lab2D
 ; I/O Bank ; Usage            ; VCCIO Voltage ; VREF Voltage ;
 +----------+------------------+---------------+--------------+
 ; 1        ; 2 / 41 ( 5 % )   ; 3.3V          ; --           ;
-; 2        ; 3 / 33 ( 9 % )   ; 3.3V          ; --           ;
+; 2        ; 4 / 33 ( 12 % )  ; 3.3V          ; --           ;
 ; 3        ; 0 / 43 ( 0 % )   ; 3.3V          ; --           ;
 ; 4        ; 0 / 40 ( 0 % )   ; 3.3V          ; --           ;
 ; 5        ; 2 / 39 ( 5 % )   ; 3.3V          ; --           ;
@@ -960,7 +959,7 @@ The pin-out file can be found in C:/Users/Student/Desktop/yen/Lab2Download/Lab2D
 ; K20      ; 215        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; K21      ; 209        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; K22      ; 210        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; L1       ; 38         ; 2        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; L1       ; 38         ; 2        ; CLOCK_50                                 ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; L2       ; 39         ; 2        ; SW[9]                                    ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; L3       ;            ; 2        ; VCCIO2                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; L4       ; 40         ; 2        ; ^nCONFIG                                 ;        ;              ;         ; --         ;                 ; --       ; --           ;
@@ -1226,423 +1225,130 @@ Note: User assignments will override these defaults. The user specified values a
 +--------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                 ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                                  ; Library Name ;
 +--------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------------------------------------------+--------------+
-; |Lab2Download                              ; 401 (0)     ; 296 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 30   ; 0            ; 105 (0)      ; 114 (0)           ; 182 (2)          ; |Lab2Download                                                                                        ; work         ;
-;    |Lab2:showReselt|                       ; 401 (0)     ; 296 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 105 (0)      ; 114 (0)           ; 182 (0)          ; |Lab2Download|Lab2:showReselt                                                                        ;              ;
-;       |controlUnit:CU|                     ; 18 (18)     ; 11 (11)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 11 (11)          ; |Lab2Download|Lab2:showReselt|controlUnit:CU                                                         ;              ;
-;       |dataPath:DP|                        ; 384 (0)     ; 285 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 98 (0)       ; 114 (0)           ; 172 (0)          ; |Lab2Download|Lab2:showReselt|dataPath:DP                                                            ;              ;
-;          |instructionCycleOperation:part1| ; 14 (0)      ; 13 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 2 (0)             ; 12 (0)           ; |Lab2Download|Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1                            ;              ;
-;             |multiplexer:Meminst_mux|      ; 5 (5)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 5 (5)            ; |Lab2Download|Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|multiplexer:Meminst_mux    ;              ;
-;             |register:eightBitsRegister|   ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 6 (6)            ; |Lab2Download|Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|register:eightBitsRegister ;              ;
+; |Lab2Download                              ; 452 (0)     ; 322 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 31   ; 0            ; 130 (0)      ; 115 (0)           ; 207 (0)          ; |Lab2Download                                                                                        ; work         ;
+;    |Lab2:showReselt|                       ; 407 (0)     ; 289 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 118 (0)      ; 115 (0)           ; 174 (0)          ; |Lab2Download|Lab2:showReselt                                                                        ;              ;
+;       |controlUnit:CU|                     ; 22 (22)     ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 16 (16)      ; 0 (0)             ; 6 (6)            ; |Lab2Download|Lab2:showReselt|controlUnit:CU                                                         ;              ;
+;       |dataPath:DP|                        ; 387 (0)     ; 285 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 102 (0)      ; 115 (0)           ; 170 (0)          ; |Lab2Download|Lab2:showReselt|dataPath:DP                                                            ;              ;
+;          |instructionCycleOperation:part1| ; 15 (0)      ; 13 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (0)        ; 3 (0)             ; 10 (0)           ; |Lab2Download|Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1                            ;              ;
+;             |multiplexer:Meminst_mux|      ; 5 (5)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 3 (3)            ; |Lab2Download|Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|multiplexer:Meminst_mux    ;              ;
+;             |register:eightBitsRegister|   ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 3 (3)             ; 5 (5)            ; |Lab2Download|Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|register:eightBitsRegister ;              ;
 ;             |register:fiveBitsRegister|    ; 5 (5)       ; 5 (5)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 5 (5)            ; |Lab2Download|Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|register:fiveBitsRegister  ;              ;
 ;          |instructionSetOperation:part3|   ; 25 (0)      ; 8 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 17 (0)       ; 0 (0)             ; 8 (0)            ; |Lab2Download|Lab2:showReselt|dataPath:DP|instructionSetOperation:part3                              ;              ;
 ;             |register:ARegister|           ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (8)            ; |Lab2Download|Lab2:showReselt|dataPath:DP|instructionSetOperation:part3|register:ARegister           ;              ;
 ;             |sub:add_sub|                  ; 17 (17)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 17 (17)      ; 0 (0)             ; 0 (0)            ; |Lab2Download|Lab2:showReselt|dataPath:DP|instructionSetOperation:part3|sub:add_sub                  ;              ;
-;          |memRAM:part2|                    ; 345 (345)   ; 264 (264)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 81 (81)      ; 112 (112)         ; 152 (152)        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2                                               ;              ;
+;          |memRAM:part2|                    ; 347 (347)   ; 264 (264)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 83 (83)      ; 112 (112)         ; 152 (152)        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2                                               ;              ;
+;    |slowClock:clockOut|                    ; 45 (45)     ; 33 (33)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 12 (12)      ; 0 (0)             ; 33 (33)          ; |Lab2Download|slowClock:clockOut                                                                     ;              ;
 +--------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+----------------------------------------------------------------------------------+
-; Delay Chain Summary                                                              ;
-+---------+----------+---------------+---------------+-----------------------+-----+
-; Name    ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ;
-+---------+----------+---------------+---------------+-----------------------+-----+
-; LEDR[0] ; Output   ; --            ; --            ; --                    ; --  ;
-; LEDR[1] ; Output   ; --            ; --            ; --                    ; --  ;
-; LEDR[2] ; Output   ; --            ; --            ; --                    ; --  ;
-; LEDR[3] ; Output   ; --            ; --            ; --                    ; --  ;
-; LEDR[4] ; Output   ; --            ; --            ; --                    ; --  ;
-; LEDR[5] ; Output   ; --            ; --            ; --                    ; --  ;
-; LEDR[6] ; Output   ; --            ; --            ; --                    ; --  ;
-; LEDR[7] ; Output   ; --            ; --            ; --                    ; --  ;
-; LEDR[8] ; Output   ; --            ; --            ; --                    ; --  ;
-; LEDR[9] ; Output   ; --            ; --            ; --                    ; --  ;
-; LEDG[0] ; Output   ; --            ; --            ; --                    ; --  ;
-; LEDG[1] ; Output   ; --            ; --            ; --                    ; --  ;
-; LEDG[2] ; Output   ; --            ; --            ; --                    ; --  ;
-; LEDG[3] ; Output   ; --            ; --            ; --                    ; --  ;
-; LEDG[4] ; Output   ; --            ; --            ; --                    ; --  ;
-; LEDG[5] ; Output   ; --            ; --            ; --                    ; --  ;
-; LEDG[6] ; Output   ; --            ; --            ; --                    ; --  ;
-; LEDG[7] ; Output   ; --            ; --            ; --                    ; --  ;
-; KEY[0]  ; Input    ; (0) 325 ps    ; (0) 325 ps    ; --                    ; --  ;
-; SW[1]   ; Input    ; (0) 325 ps    ; (0) 325 ps    ; --                    ; --  ;
-; SW[0]   ; Input    ; (0) 325 ps    ; (0) 325 ps    ; --                    ; --  ;
-; SW[2]   ; Input    ; (0) 325 ps    ; (0) 325 ps    ; --                    ; --  ;
-; SW[3]   ; Input    ; (0) 312 ps    ; (0) 312 ps    ; --                    ; --  ;
-; SW[4]   ; Input    ; (0) 312 ps    ; (0) 312 ps    ; --                    ; --  ;
-; SW[5]   ; Input    ; (0) 312 ps    ; (0) 312 ps    ; --                    ; --  ;
-; SW[6]   ; Input    ; (0) 312 ps    ; (0) 312 ps    ; --                    ; --  ;
-; SW[7]   ; Input    ; (0) 325 ps    ; (0) 325 ps    ; --                    ; --  ;
-; SW[8]   ; Input    ; (0) 325 ps    ; (0) 325 ps    ; --                    ; --  ;
-; KEY[1]  ; Input    ; (6) 4358 ps   ; (6) 4358 ps   ; --                    ; --  ;
-; SW[9]   ; Input    ; (0) 325 ps    ; (0) 325 ps    ; --                    ; --  ;
-+---------+----------+---------------+---------------+-----------------------+-----+
++-----------------------------------------------------------------------------------+
+; Delay Chain Summary                                                               ;
++----------+----------+---------------+---------------+-----------------------+-----+
+; Name     ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ;
++----------+----------+---------------+---------------+-----------------------+-----+
+; KEY[0]   ; Input    ; (0) 325 ps    ; (0) 325 ps    ; --                    ; --  ;
+; LEDR[0]  ; Output   ; --            ; --            ; --                    ; --  ;
+; LEDR[1]  ; Output   ; --            ; --            ; --                    ; --  ;
+; LEDR[2]  ; Output   ; --            ; --            ; --                    ; --  ;
+; LEDR[3]  ; Output   ; --            ; --            ; --                    ; --  ;
+; LEDR[4]  ; Output   ; --            ; --            ; --                    ; --  ;
+; LEDR[5]  ; Output   ; --            ; --            ; --                    ; --  ;
+; LEDR[6]  ; Output   ; --            ; --            ; --                    ; --  ;
+; LEDR[7]  ; Output   ; --            ; --            ; --                    ; --  ;
+; LEDR[8]  ; Output   ; --            ; --            ; --                    ; --  ;
+; LEDR[9]  ; Output   ; --            ; --            ; --                    ; --  ;
+; LEDG[0]  ; Output   ; --            ; --            ; --                    ; --  ;
+; LEDG[1]  ; Output   ; --            ; --            ; --                    ; --  ;
+; LEDG[2]  ; Output   ; --            ; --            ; --                    ; --  ;
+; LEDG[3]  ; Output   ; --            ; --            ; --                    ; --  ;
+; LEDG[4]  ; Output   ; --            ; --            ; --                    ; --  ;
+; LEDG[5]  ; Output   ; --            ; --            ; --                    ; --  ;
+; LEDG[6]  ; Output   ; --            ; --            ; --                    ; --  ;
+; LEDG[7]  ; Output   ; --            ; --            ; --                    ; --  ;
+; SW[0]    ; Input    ; (0) 325 ps    ; (0) 325 ps    ; --                    ; --  ;
+; SW[9]    ; Input    ; (0) 325 ps    ; (0) 325 ps    ; --                    ; --  ;
+; SW[1]    ; Input    ; (0) 325 ps    ; (0) 325 ps    ; --                    ; --  ;
+; SW[2]    ; Input    ; (0) 325 ps    ; (0) 325 ps    ; --                    ; --  ;
+; SW[3]    ; Input    ; (0) 312 ps    ; (0) 312 ps    ; --                    ; --  ;
+; SW[4]    ; Input    ; (0) 312 ps    ; (0) 312 ps    ; --                    ; --  ;
+; SW[5]    ; Input    ; (0) 312 ps    ; (0) 312 ps    ; --                    ; --  ;
+; SW[6]    ; Input    ; (0) 312 ps    ; (0) 312 ps    ; --                    ; --  ;
+; SW[7]    ; Input    ; (0) 325 ps    ; (0) 325 ps    ; --                    ; --  ;
+; SW[8]    ; Input    ; (0) 325 ps    ; (0) 325 ps    ; --                    ; --  ;
+; CLOCK_50 ; Input    ; (0) 325 ps    ; (0) 325 ps    ; --                    ; --  ;
+; KEY[1]   ; Input    ; (6) 4358 ps   ; (6) 4358 ps   ; --                    ; --  ;
++----------+----------+---------------+---------------+-----------------------+-----+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                                                                                     ;
-+------------------------------------------------------------------------------------------------------+-------------------+---------+
-; Source Pin / Fanout                                                                                  ; Pad To Core Index ; Setting ;
-+------------------------------------------------------------------------------------------------------+-------------------+---------+
-; KEY[0]                                                                                               ;                   ;         ;
-;      - Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|register:eightBitsRegister|out[5] ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|register:eightBitsRegister|out[6] ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|register:eightBitsRegister|out[7] ; 1                 ; 0       ;
-;      - Lab2:showReselt|controlUnit:CU|state.halt                                                     ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|register:fiveBitsRegister|out[2]  ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|register:fiveBitsRegister|out[3]  ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|register:fiveBitsRegister|out[1]  ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|register:fiveBitsRegister|out[4]  ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|register:fiveBitsRegister|out[0]  ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|instructionSetOperation:part3|register:ARegister|out[0]           ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|instructionSetOperation:part3|register:ARegister|out[1]           ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|instructionSetOperation:part3|register:ARegister|out[2]           ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|instructionSetOperation:part3|register:ARegister|out[3]           ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|instructionSetOperation:part3|register:ARegister|out[4]           ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|instructionSetOperation:part3|register:ARegister|out[5]           ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|instructionSetOperation:part3|register:ARegister|out[6]           ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|instructionSetOperation:part3|register:ARegister|out[7]           ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|Q[0]                                                 ; 0                 ; 0       ;
-;      - Lab2:showReselt|controlUnit:CU|state.sub                                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|controlUnit:CU|state.Input                                                    ; 0                 ; 0       ;
-;      - Lab2:showReselt|controlUnit:CU|state.load                                                     ; 0                 ; 0       ;
-;      - Lab2:showReselt|controlUnit:CU|state.add                                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|Q[1]                                                 ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|Q[2]                                                 ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|Q[3]                                                 ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|Q[4]                                                 ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|Q[5]                                                 ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|Q[6]                                                 ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|Q[7]                                                 ; 1                 ; 0       ;
-;      - Lab2:showReselt|controlUnit:CU|state.decode                                                   ; 1                 ; 0       ;
-;      - Lab2:showReselt|controlUnit:CU|state.fetch                                                    ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[19][0]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|register:eightBitsRegister|out[1] ; 1                 ; 0       ;
-;      - Lab2:showReselt|controlUnit:CU|state.store                                                    ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[21][0]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|register:eightBitsRegister|out[2] ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[17][0]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[23][0]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|register:eightBitsRegister|out[4] ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[11][0]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[13][0]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[9][0]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[15][0]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|register:eightBitsRegister|out[3] ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[3][0]                                       ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[5][0]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[1][0]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[7][0]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[27][0]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[29][0]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[25][0]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[31][0]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[6][0]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[10][0]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[2][0]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[14][0]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[20][0]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[24][0]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[16][0]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[28][0]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[4][0]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[8][0]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[0][0]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[12][0]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[26][0]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[22][0]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[18][0]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[30][0]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|register:eightBitsRegister|out[0] ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[21][1]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[25][1]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[17][1]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[29][1]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[7][1]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[11][1]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[3][1]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[15][1]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[5][1]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[9][1]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[1][1]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[13][1]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[23][1]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[27][1]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[19][1]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[31][1]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[18][1]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[24][1]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[16][1]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[26][1]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[12][1]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[6][1]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[4][1]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[14][1]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[8][1]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[2][1]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[0][1]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[10][1]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[28][1]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[22][1]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[20][1]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[30][1]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[25][2]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[19][2]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[17][2]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[27][2]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[13][2]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[7][2]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[5][2]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[15][2]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[9][2]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[3][2]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[1][2]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[11][2]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[29][2]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[23][2]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[21][2]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[31][2]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[18][2]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[20][2]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[16][2]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[22][2]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[10][2]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[12][2]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[8][2]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[14][2]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[2][2]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[4][2]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[0][2]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[6][2]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[26][2]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[28][2]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[24][2]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[30][2]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[19][3]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[21][3]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[17][3]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[23][3]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[11][3]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[13][3]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[9][3]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[15][3]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[3][3]                                       ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[5][3]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[1][3]                                       ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[7][3]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[27][3]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[29][3]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[25][3]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[31][3]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[20][3]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[24][3]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[16][3]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[28][3]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[6][3]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[10][3]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[2][3]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[14][3]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[4][3]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[8][3]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[0][3]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[12][3]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[22][3]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[26][3]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[18][3]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[30][3]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[21][4]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[13][4]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[5][4]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[29][4]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[19][4]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[11][4]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[3][4]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[27][4]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[17][4]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[9][4]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[1][4]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[25][4]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[23][4]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[15][4]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[7][4]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[31][4]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[24][4]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[18][4]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[16][4]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[26][4]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[12][4]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[6][4]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[4][4]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[14][4]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[8][4]                                       ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[2][4]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[0][4]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[10][4]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[28][4]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[22][4]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[20][4]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[30][4]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[19][5]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[11][5]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[3][5]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[27][5]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[21][5]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[13][5]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[5][5]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[29][5]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[17][5]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[9][5]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[1][5]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[25][5]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[23][5]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[15][5]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[7][5]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[31][5]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[20][5]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[18][5]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[16][5]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[22][5]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[10][5]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[12][5]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[8][5]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[14][5]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[4][5]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[2][5]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[0][5]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[6][5]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[28][5]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[26][5]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[24][5]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[30][5]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[21][6]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[13][6]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[5][6]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[29][6]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[19][6]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[11][6]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[3][6]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[27][6]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[17][6]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[9][6]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[1][6]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[25][6]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[23][6]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[15][6]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[7][6]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[31][6]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[18][6]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[20][6]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[16][6]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[22][6]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[12][6]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[10][6]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[8][6]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[14][6]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[4][6]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[2][6]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[0][6]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[6][6]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[26][6]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[28][6]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[24][6]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[30][6]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[19][7]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[11][7]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[3][7]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[27][7]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[21][7]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[13][7]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[5][7]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[29][7]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[17][7]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[9][7]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[1][7]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[25][7]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[23][7]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[15][7]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[7][7]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[31][7]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[20][7]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[18][7]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[16][7]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[22][7]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[10][7]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[12][7]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[8][7]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[14][7]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[2][7]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[4][7]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[0][7]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[6][7]                                       ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[28][7]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[26][7]                                      ; 1                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[24][7]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[30][7]                                      ; 0                 ; 0       ;
-;      - Lab2:showReselt|controlUnit:CU|state.start                                                    ; 0                 ; 0       ;
-;      - Lab2:showReselt|controlUnit:CU|state.jz                                                       ; 0                 ; 0       ;
-;      - Lab2:showReselt|controlUnit:CU|state.jpos                                                     ; 0                 ; 0       ;
-; SW[1]                                                                                                ;                   ;         ;
-; SW[0]                                                                                                ;                   ;         ;
-; SW[2]                                                                                                ;                   ;         ;
-; SW[3]                                                                                                ;                   ;         ;
-; SW[4]                                                                                                ;                   ;         ;
-; SW[5]                                                                                                ;                   ;         ;
-; SW[6]                                                                                                ;                   ;         ;
-; SW[7]                                                                                                ;                   ;         ;
-; SW[8]                                                                                                ;                   ;         ;
-; KEY[1]                                                                                               ;                   ;         ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|Q[0]~0                                               ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[19][0]~0                                    ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[21][0]~1                                    ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~2                                           ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[17][5]~3                                    ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[23][0]~4                                    ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~5                                           ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[11][4]~6                                    ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[13][4]~7                                    ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[9][4]~8                                     ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[15][3]~9                                    ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[3][4]~10                                    ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[5][0]~11                                    ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[1][3]~12                                    ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[7][1]~13                                    ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[27][0]~14                                   ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[29][0]~15                                   ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[25][0]~16                                   ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[31][4]~17                                   ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[6][3]~18                                    ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[10][4]~19                                   ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[2][3]~20                                    ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[14][1]~21                                   ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[20][0]~22                                   ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[24][0]~23                                   ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[16][5]~24                                   ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[28][0]~25                                   ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[4][6]~26                                    ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[8][1]~27                                    ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[0][2]~28                                    ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[12][6]~29                                   ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[26][0]~30                                   ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[22][0]~31                                   ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[18][0]~32                                   ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[30][5]~33                                   ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~34                                          ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~35                                          ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~36                                          ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~37                                          ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~38                                          ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~39                                          ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~40                                          ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~41                                          ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~42                                          ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~43                                          ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~44                                          ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~45                                          ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~46                                          ; 0                 ; 6       ;
-;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~47                                          ; 0                 ; 6       ;
-; SW[9]                                                                                                ;                   ;         ;
-+------------------------------------------------------------------------------------------------------+-------------------+---------+
++--------------------------------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                                                   ;
++--------------------------------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                                                ; Pad To Core Index ; Setting ;
++--------------------------------------------------------------------+-------------------+---------+
+; KEY[0]                                                             ;                   ;         ;
+; SW[0]                                                              ;                   ;         ;
+; SW[9]                                                              ;                   ;         ;
+; SW[1]                                                              ;                   ;         ;
+; SW[2]                                                              ;                   ;         ;
+; SW[3]                                                              ;                   ;         ;
+; SW[4]                                                              ;                   ;         ;
+; SW[5]                                                              ;                   ;         ;
+; SW[6]                                                              ;                   ;         ;
+; SW[7]                                                              ;                   ;         ;
+; SW[8]                                                              ;                   ;         ;
+; CLOCK_50                                                           ;                   ;         ;
+; KEY[1]                                                             ;                   ;         ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|Q[0]~0             ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~24        ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[17][7]~26 ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~27        ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[11][7]~29 ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[13][5]~30 ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[9][2]~31  ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[15][2]~32 ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[3][3]~33  ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[5][6]~34  ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[1][6]~35  ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[7][2]~36  ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[31][3]~37 ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[6][3]~38  ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[10][1]~39 ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[2][3]~40  ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[14][1]~41 ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[16][3]~42 ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[4][2]~43  ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[8][6]~44  ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[0][1]~45  ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[12][5]~46 ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[30][7]~47 ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~48        ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~49        ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~50        ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~51        ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~52        ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~53        ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~54        ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~55        ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~56        ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~57        ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~58        ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~59        ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~60        ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~61        ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[19][0]~62 ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[21][0]~63 ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[23][0]~64 ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[27][0]~65 ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[29][0]~66 ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[25][0]~67 ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[20][0]~68 ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[24][0]~69 ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[28][0]~70 ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[26][0]~71 ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[22][0]~72 ; 0                 ; 6       ;
+;      - Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[18][0]~73 ; 0                 ; 6       ;
++--------------------------------------------------------------------+-------------------+---------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1650,56 +1356,61 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; Name                                                        ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; KEY[0]                                                      ; PIN_R22            ; 296     ; Clock        ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|controlUnit:CU|JMPmux                       ; LCCOMB_X42_Y11_N0  ; 5       ; Sync. load   ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|controlUnit:CU|Selector0~3                  ; LCCOMB_X46_Y10_N20 ; 5       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|controlUnit:CU|WideOr1~0                    ; LCCOMB_X46_Y10_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|controlUnit:CU|state.fetch                  ; LCFF_X46_Y10_N3    ; 11      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|controlUnit:CU|state.load                   ; LCFF_X46_Y10_N13   ; 9       ; Sync. load   ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|Q[0]~0             ; LCCOMB_X39_Y11_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[0][2]~28  ; LCCOMB_X44_Y11_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[10][4]~19 ; LCCOMB_X42_Y12_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[11][4]~6  ; LCCOMB_X47_Y12_N12 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[12][6]~29 ; LCCOMB_X46_Y11_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[13][4]~7  ; LCCOMB_X42_Y12_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[14][1]~21 ; LCCOMB_X46_Y11_N16 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[15][3]~9  ; LCCOMB_X46_Y11_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[16][5]~24 ; LCCOMB_X44_Y11_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[17][5]~3  ; LCCOMB_X42_Y12_N24 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[18][0]~32 ; LCCOMB_X39_Y11_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[19][0]~0  ; LCCOMB_X42_Y12_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[1][3]~12  ; LCCOMB_X42_Y12_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[20][0]~22 ; LCCOMB_X44_Y11_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[21][0]~1  ; LCCOMB_X42_Y12_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[22][0]~31 ; LCCOMB_X42_Y12_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[23][0]~4  ; LCCOMB_X39_Y11_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[24][0]~23 ; LCCOMB_X44_Y11_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[25][0]~16 ; LCCOMB_X42_Y12_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[26][0]~30 ; LCCOMB_X42_Y12_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[27][0]~14 ; LCCOMB_X47_Y12_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[28][0]~25 ; LCCOMB_X46_Y11_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[29][0]~15 ; LCCOMB_X42_Y12_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[2][3]~20  ; LCCOMB_X39_Y11_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[30][5]~33 ; LCCOMB_X46_Y11_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[31][4]~17 ; LCCOMB_X46_Y11_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[3][4]~10  ; LCCOMB_X42_Y12_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[4][6]~26  ; LCCOMB_X44_Y11_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[5][0]~11  ; LCCOMB_X42_Y12_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[6][3]~18  ; LCCOMB_X42_Y12_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[7][1]~13  ; LCCOMB_X47_Y11_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[8][1]~27  ; LCCOMB_X44_Y11_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[9][4]~8   ; LCCOMB_X42_Y12_N12 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; SW[0]                                                       ; PIN_L22            ; 32      ; Async. clear ; yes    ; Global Clock         ; GCLK6            ; --                        ;
+; CLOCK_50                                                    ; PIN_L1             ; 32      ; Clock        ; yes    ; Global Clock         ; GCLK2            ; --                        ;
+; CLOCK_50                                                    ; PIN_L1             ; 2       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|controlUnit:CU|Decoder0~3                   ; LCCOMB_X33_Y16_N30 ; 8       ; Sync. load   ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|controlUnit:CU|Decoder0~5                   ; LCCOMB_X31_Y14_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|controlUnit:CU|JMPmux~0                     ; LCCOMB_X33_Y16_N6  ; 5       ; Sync. load   ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|controlUnit:CU|Mux0~3                       ; LCCOMB_X33_Y16_N18 ; 5       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|controlUnit:CU|WideOr0~0                    ; LCCOMB_X33_Y16_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|Q[0]~0             ; LCCOMB_X26_Y17_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[0][1]~45  ; LCCOMB_X25_Y15_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[10][1]~39 ; LCCOMB_X32_Y16_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[11][7]~29 ; LCCOMB_X31_Y18_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[12][5]~46 ; LCCOMB_X25_Y15_N16 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[13][5]~30 ; LCCOMB_X31_Y18_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[14][1]~41 ; LCCOMB_X26_Y18_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[15][2]~32 ; LCCOMB_X27_Y14_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[16][3]~42 ; LCCOMB_X25_Y15_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[17][7]~26 ; LCCOMB_X30_Y15_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[18][0]~73 ; LCCOMB_X32_Y16_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[19][0]~62 ; LCCOMB_X30_Y15_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[1][6]~35  ; LCCOMB_X30_Y15_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[20][0]~68 ; LCCOMB_X25_Y15_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[21][0]~63 ; LCCOMB_X30_Y15_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[22][0]~72 ; LCCOMB_X32_Y16_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[23][0]~64 ; LCCOMB_X27_Y18_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[24][0]~69 ; LCCOMB_X25_Y15_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[25][0]~67 ; LCCOMB_X31_Y18_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[26][0]~71 ; LCCOMB_X32_Y16_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[27][0]~65 ; LCCOMB_X31_Y18_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[28][0]~70 ; LCCOMB_X25_Y15_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[29][0]~66 ; LCCOMB_X31_Y18_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[2][3]~40  ; LCCOMB_X32_Y16_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[30][7]~47 ; LCCOMB_X27_Y15_N12 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[31][3]~37 ; LCCOMB_X27_Y16_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[3][3]~33  ; LCCOMB_X30_Y15_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[4][2]~43  ; LCCOMB_X25_Y15_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[5][6]~34  ; LCCOMB_X30_Y15_N24 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[6][3]~38  ; LCCOMB_X32_Y16_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[7][2]~36  ; LCCOMB_X27_Y18_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[8][6]~44  ; LCCOMB_X25_Y15_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[9][2]~31  ; LCCOMB_X31_Y18_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; SW[9]                                                       ; PIN_L2             ; 25      ; Async. clear ; yes    ; Global Clock         ; GCLK1            ; --                        ;
+; slowClock:clockOut|LessThan0~11                             ; LCCOMB_X21_Y10_N16 ; 33      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; slowClock:clockOut|outX[0]                                  ; LCFF_X21_Y10_N1    ; 289     ; Clock        ; yes    ; Global Clock         ; GCLK6            ; --                        ;
 +-------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
-+--------------------------------------------------------------------------------------------------+
-; Global & Other Fast Signals                                                                      ;
-+-------+----------+---------+----------------------+------------------+---------------------------+
-; Name  ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+-------+----------+---------+----------------------+------------------+---------------------------+
-; SW[0] ; PIN_L22  ; 32      ; Global Clock         ; GCLK6            ; --                        ;
-+-------+----------+---------+----------------------+------------------+---------------------------+
++------------------------------------------------------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                                                                  ;
++----------------------------+-----------------+---------+----------------------+------------------+---------------------------+
+; Name                       ; Location        ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++----------------------------+-----------------+---------+----------------------+------------------+---------------------------+
+; CLOCK_50                   ; PIN_L1          ; 32      ; Global Clock         ; GCLK2            ; --                        ;
+; SW[9]                      ; PIN_L2          ; 25      ; Global Clock         ; GCLK1            ; --                        ;
+; slowClock:clockOut|outX[0] ; LCFF_X21_Y10_N1 ; 289     ; Global Clock         ; GCLK6            ; --                        ;
++----------------------------+-----------------+---------+----------------------+------------------+---------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------+
@@ -1707,15 +1418,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------------------------+---------+
 ; Name                                                                                            ; Fan-Out ;
 +-------------------------------------------------------------------------------------------------+---------+
-; KEY[0]                                                                                          ; 296     ;
 ; Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|multiplexer:Meminst_mux|Output[1]~0 ; 80      ;
 ; Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|multiplexer:Meminst_mux|Output[2]~1 ; 79      ;
 ; Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|multiplexer:Meminst_mux|Output[3]~3 ; 74      ;
 ; Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|multiplexer:Meminst_mux|Output[4]~2 ; 67      ;
 ; KEY[1]                                                                                          ; 49      ;
-; Lab2:showReselt|controlUnit:CU|state.store                                                      ; 38      ;
+; slowClock:clockOut|LessThan0~11                                                                 ; 33      ;
 ; Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|multiplexer:Meminst_mux|Output[0]~4 ; 24      ;
-; Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|register:eightBitsRegister|out[4]   ; 22      ;
+; Lab2:showReselt|controlUnit:CU|state[3]                                                         ; 17      ;
 ; Lab2:showReselt|dataPath:DP|instructionSetOperation:part3|register:ARegister|out[7]             ; 17      ;
 ; Lab2:showReselt|dataPath:DP|instructionSetOperation:part3|register:ARegister|out[6]             ; 17      ;
 ; Lab2:showReselt|dataPath:DP|instructionSetOperation:part3|register:ARegister|out[5]             ; 17      ;
@@ -1724,39 +1434,40 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Lab2:showReselt|dataPath:DP|instructionSetOperation:part3|register:ARegister|out[2]             ; 17      ;
 ; Lab2:showReselt|dataPath:DP|instructionSetOperation:part3|register:ARegister|out[1]             ; 17      ;
 ; Lab2:showReselt|dataPath:DP|instructionSetOperation:part3|register:ARegister|out[0]             ; 17      ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~36                                            ; 15      ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~5                                             ; 14      ;
-; Lab2:showReselt|controlUnit:CU|state.decode                                                     ; 14      ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~47                                            ; 13      ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~45                                            ; 13      ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~40                                            ; 13      ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~38                                            ; 13      ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~34                                            ; 12      ;
-; Lab2:showReselt|controlUnit:CU|state.Input                                                      ; 12      ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~42                                            ; 11      ;
-; Lab2:showReselt|controlUnit:CU|state.fetch                                                      ; 11      ;
-; Lab2:showReselt|controlUnit:CU|state.sub                                                        ; 10      ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~43                                            ; 9       ;
-; Lab2:showReselt|controlUnit:CU|state.load                                                       ; 9       ;
-; Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|register:eightBitsRegister|out[7]   ; 9       ;
-; Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|register:eightBitsRegister|out[6]   ; 9       ;
-; Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|register:eightBitsRegister|out[5]   ; 9       ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~35                                            ; 8       ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[30][5]~33                                     ; 8       ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[18][0]~32                                     ; 8       ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[22][0]~31                                     ; 8       ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[26][0]~30                                     ; 8       ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[12][6]~29                                     ; 8       ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[0][2]~28                                      ; 8       ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[8][1]~27                                      ; 8       ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[4][6]~26                                      ; 8       ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[28][0]~25                                     ; 8       ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[16][5]~24                                     ; 8       ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[24][0]~23                                     ; 8       ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[20][0]~22                                     ; 8       ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[14][1]~21                                     ; 8       ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[2][3]~20                                      ; 8       ;
-; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[10][4]~19                                     ; 8       ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[11][7]~28                                     ; 16      ;
+; Lab2:showReselt|controlUnit:CU|state[2]                                                         ; 16      ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~50                                            ; 15      ;
+; Lab2:showReselt|controlUnit:CU|Decoder0~6                                                       ; 15      ;
+; Lab2:showReselt|controlUnit:CU|state[1]                                                         ; 15      ;
+; Lab2:showReselt|controlUnit:CU|state[0]                                                         ; 15      ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~27                                            ; 14      ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~61                                            ; 13      ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~59                                            ; 13      ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~54                                            ; 13      ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~52                                            ; 13      ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~48                                            ; 12      ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~56                                            ; 11      ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~57                                            ; 9       ;
+; Lab2:showReselt|controlUnit:CU|Decoder0~1                                                       ; 9       ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[18][0]~73                                     ; 8       ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[22][0]~72                                     ; 8       ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[26][0]~71                                     ; 8       ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[28][0]~70                                     ; 8       ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[24][0]~69                                     ; 8       ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[20][0]~68                                     ; 8       ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[25][0]~67                                     ; 8       ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[29][0]~66                                     ; 8       ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[27][0]~65                                     ; 8       ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[23][0]~64                                     ; 8       ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[21][0]~63                                     ; 8       ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[19][0]~62                                     ; 8       ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER~49                                            ; 8       ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[30][7]~47                                     ; 8       ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[12][5]~46                                     ; 8       ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[0][1]~45                                      ; 8       ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[8][6]~44                                      ; 8       ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[4][2]~43                                      ; 8       ;
+; Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[16][3]~42                                     ; 8       ;
 +-------------------------------------------------------------------------------------------------+---------+
 
 
@@ -1765,157 +1476,161 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------+------------------------+
 ; Interconnect Resource Type ; Usage                  ;
 +----------------------------+------------------------+
-; Block interconnects        ; 742 / 54,004 ( 1 % )   ;
-; C16 interconnects          ; 5 / 2,100 ( < 1 % )    ;
-; C4 interconnects           ; 380 / 36,000 ( 1 % )   ;
-; Direct links               ; 88 / 54,004 ( < 1 % )  ;
-; Global clocks              ; 1 / 16 ( 6 % )         ;
-; Local interconnects        ; 118 / 18,752 ( < 1 % ) ;
-; R24 interconnects          ; 17 / 1,900 ( < 1 % )   ;
-; R4 interconnects           ; 451 / 46,920 ( < 1 % ) ;
+; Block interconnects        ; 779 / 54,004 ( 1 % )   ;
+; C16 interconnects          ; 11 / 2,100 ( < 1 % )   ;
+; C4 interconnects           ; 420 / 36,000 ( 1 % )   ;
+; Direct links               ; 100 / 54,004 ( < 1 % ) ;
+; Global clocks              ; 3 / 16 ( 19 % )        ;
+; Local interconnects        ; 163 / 18,752 ( < 1 % ) ;
+; R24 interconnects          ; 22 / 1,900 ( 1 % )     ;
+; R4 interconnects           ; 584 / 46,920 ( 1 % )   ;
 +----------------------------+------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 12.94) ; Number of LABs  (Total = 31) ;
+; Number of Logic Elements  (Average = 13.29) ; Number of LABs  (Total = 34) ;
 +---------------------------------------------+------------------------------+
-; 1                                           ; 1                            ;
-; 2                                           ; 0                            ;
+; 1                                           ; 2                            ;
+; 2                                           ; 1                            ;
 ; 3                                           ; 0                            ;
-; 4                                           ; 3                            ;
-; 5                                           ; 0                            ;
+; 4                                           ; 0                            ;
+; 5                                           ; 1                            ;
 ; 6                                           ; 1                            ;
 ; 7                                           ; 0                            ;
-; 8                                           ; 1                            ;
-; 9                                           ; 1                            ;
+; 8                                           ; 0                            ;
+; 9                                           ; 2                            ;
 ; 10                                          ; 0                            ;
 ; 11                                          ; 1                            ;
 ; 12                                          ; 1                            ;
-; 13                                          ; 2                            ;
+; 13                                          ; 0                            ;
 ; 14                                          ; 1                            ;
 ; 15                                          ; 2                            ;
-; 16                                          ; 17                           ;
+; 16                                          ; 22                           ;
 +---------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 2.16) ; Number of LABs  (Total = 31) ;
+; LAB-wide Signals  (Average = 2.15) ; Number of LABs  (Total = 34) ;
 +------------------------------------+------------------------------+
-; 1 Async. clear                     ; 5                            ;
-; 1 Clock                            ; 31                           ;
-; 1 Clock enable                     ; 9                            ;
-; 1 Sync. load                       ; 2                            ;
-; 2 Clock enables                    ; 20                           ;
+; 1 Async. clear                     ; 6                            ;
+; 1 Clock                            ; 33                           ;
+; 1 Clock enable                     ; 7                            ;
+; 1 Sync. clear                      ; 2                            ;
+; 1 Sync. load                       ; 3                            ;
+; 2 Clock enables                    ; 22                           ;
 +------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 20.23) ; Number of LABs  (Total = 31) ;
+; Number of Signals Sourced  (Average = 20.74) ; Number of LABs  (Total = 34) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
-; 1                                            ; 0                            ;
+; 1                                            ; 1                            ;
 ; 2                                            ; 1                            ;
-; 3                                            ; 0                            ;
+; 3                                            ; 1                            ;
 ; 4                                            ; 0                            ;
 ; 5                                            ; 0                            ;
-; 6                                            ; 1                            ;
-; 7                                            ; 2                            ;
-; 8                                            ; 0                            ;
+; 6                                            ; 0                            ;
+; 7                                            ; 0                            ;
+; 8                                            ; 1                            ;
 ; 9                                            ; 0                            ;
-; 10                                           ; 0                            ;
-; 11                                           ; 1                            ;
-; 12                                           ; 1                            ;
-; 13                                           ; 0                            ;
+; 10                                           ; 1                            ;
+; 11                                           ; 0                            ;
+; 12                                           ; 0                            ;
+; 13                                           ; 1                            ;
 ; 14                                           ; 0                            ;
 ; 15                                           ; 1                            ;
 ; 16                                           ; 0                            ;
-; 17                                           ; 0                            ;
-; 18                                           ; 2                            ;
-; 19                                           ; 2                            ;
-; 20                                           ; 2                            ;
-; 21                                           ; 1                            ;
+; 17                                           ; 1                            ;
+; 18                                           ; 5                            ;
+; 19                                           ; 1                            ;
+; 20                                           ; 1                            ;
+; 21                                           ; 0                            ;
 ; 22                                           ; 1                            ;
 ; 23                                           ; 2                            ;
-; 24                                           ; 3                            ;
-; 25                                           ; 1                            ;
-; 26                                           ; 4                            ;
+; 24                                           ; 0                            ;
+; 25                                           ; 3                            ;
+; 26                                           ; 2                            ;
 ; 27                                           ; 5                            ;
-; 28                                           ; 1                            ;
+; 28                                           ; 3                            ;
+; 29                                           ; 1                            ;
+; 30                                           ; 0                            ;
+; 31                                           ; 0                            ;
+; 32                                           ; 2                            ;
 +----------------------------------------------+------------------------------+
 
 
 +---------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                         ;
 +--------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 10.68) ; Number of LABs  (Total = 31) ;
+; Number of Signals Sourced Out  (Average = 10.53) ; Number of LABs  (Total = 34) ;
 +--------------------------------------------------+------------------------------+
 ; 0                                                ; 0                            ;
-; 1                                                ; 0                            ;
+; 1                                                ; 2                            ;
 ; 2                                                ; 1                            ;
 ; 3                                                ; 1                            ;
-; 4                                                ; 2                            ;
-; 5                                                ; 2                            ;
+; 4                                                ; 0                            ;
+; 5                                                ; 1                            ;
 ; 6                                                ; 1                            ;
-; 7                                                ; 2                            ;
-; 8                                                ; 2                            ;
-; 9                                                ; 2                            ;
-; 10                                               ; 1                            ;
-; 11                                               ; 1                            ;
-; 12                                               ; 2                            ;
-; 13                                               ; 6                            ;
+; 7                                                ; 1                            ;
+; 8                                                ; 0                            ;
+; 9                                                ; 4                            ;
+; 10                                               ; 5                            ;
+; 11                                               ; 5                            ;
+; 12                                               ; 1                            ;
+; 13                                               ; 2                            ;
 ; 14                                               ; 2                            ;
-; 15                                               ; 1                            ;
-; 16                                               ; 2                            ;
-; 17                                               ; 1                            ;
+; 15                                               ; 4                            ;
+; 16                                               ; 3                            ;
+; 17                                               ; 0                            ;
 ; 18                                               ; 1                            ;
-; 19                                               ; 0                            ;
-; 20                                               ; 0                            ;
-; 21                                               ; 1                            ;
 +--------------------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 21.55) ; Number of LABs  (Total = 31) ;
+; Number of Distinct Inputs  (Average = 21.18) ; Number of LABs  (Total = 34) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
-; 2                                            ; 0                            ;
-; 3                                            ; 0                            ;
+; 2                                            ; 1                            ;
+; 3                                            ; 1                            ;
 ; 4                                            ; 1                            ;
-; 5                                            ; 0                            ;
-; 6                                            ; 0                            ;
-; 7                                            ; 1                            ;
+; 5                                            ; 1                            ;
+; 6                                            ; 1                            ;
+; 7                                            ; 0                            ;
 ; 8                                            ; 0                            ;
-; 9                                            ; 0                            ;
-; 10                                           ; 3                            ;
+; 9                                            ; 2                            ;
+; 10                                           ; 0                            ;
 ; 11                                           ; 0                            ;
-; 12                                           ; 1                            ;
+; 12                                           ; 0                            ;
 ; 13                                           ; 0                            ;
 ; 14                                           ; 0                            ;
-; 15                                           ; 1                            ;
-; 16                                           ; 2                            ;
+; 15                                           ; 0                            ;
+; 16                                           ; 1                            ;
 ; 17                                           ; 1                            ;
-; 18                                           ; 0                            ;
-; 19                                           ; 1                            ;
-; 20                                           ; 0                            ;
-; 21                                           ; 2                            ;
+; 18                                           ; 1                            ;
+; 19                                           ; 0                            ;
+; 20                                           ; 3                            ;
+; 21                                           ; 1                            ;
 ; 22                                           ; 2                            ;
-; 23                                           ; 1                            ;
-; 24                                           ; 3                            ;
-; 25                                           ; 0                            ;
-; 26                                           ; 1                            ;
-; 27                                           ; 0                            ;
+; 23                                           ; 2                            ;
+; 24                                           ; 0                            ;
+; 25                                           ; 3                            ;
+; 26                                           ; 0                            ;
+; 27                                           ; 1                            ;
 ; 28                                           ; 2                            ;
-; 29                                           ; 1                            ;
-; 30                                           ; 8                            ;
+; 29                                           ; 4                            ;
+; 30                                           ; 1                            ;
+; 31                                           ; 4                            ;
+; 32                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
 
@@ -1961,7 +1676,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Fitter
     Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
-    Info: Processing started: Mon Dec 21 13:51:43 2015
+    Info: Processing started: Tue Dec 22 18:23:53 2015
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off Lab2Download -c Lab2Download
 Info: Selected device EP2C20F484C7 for design "Lab2Download"
 Info: Low junction temperature is 0 degrees C
@@ -1978,8 +1693,16 @@ Info: Fitter converted 3 user pins into dedicated programming pins
     Info: Pin ~LVDS91p/nCEO~ is reserved at location W20
 Info: Timing-driven compilation is using the Classic Timing Analyzer
 Info: Timing requirements not specified -- quality metrics such as performance and power consumption may be sacrificed to reduce compilation time.
-Info: Automatically promoted node SW[0] (placed in PIN L22 (CLK4, LVDSCLK2p, Input))
-    Info: Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G6
+Info: Automatically promoted node CLOCK_50 (placed in PIN L1 (CLK0, LVDSCLK0p, Input))
+    Info: Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G2
+    Info: Following destination nodes may be non-global or may not use global or regional clocks
+        Info: Destination node slowClock:clockOut|outX[0]
+Info: Automatically promoted node slowClock:clockOut|outX[0] 
+    Info: Automatically promoted destinations to use location or clock signal Global Clock
+    Info: Following destination nodes may be non-global or may not use global or regional clocks
+        Info: Destination node slowClock:clockOut|outX[0]~0
+Info: Automatically promoted node SW[9] (placed in PIN L2 (CLK1, LVDSCLK0n, Input))
+    Info: Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G1
 Info: Starting register packing
 Extra Info: Performing register packing on registers with non-logic cell location assignments
 Extra Info: Completed register packing on registers with non-logic cell location assignments
@@ -1999,7 +1722,6 @@ Warning: Ignored I/O standard assignments to the following nodes
     Warning: Ignored I/O standard assignment to node "CLOCK_24[0]"
     Warning: Ignored I/O standard assignment to node "CLOCK_24[1]"
     Warning: Ignored I/O standard assignment to node "CLOCK_27[1]"
-    Warning: Ignored I/O standard assignment to node "CLOCK_50"
     Warning: Ignored I/O standard assignment to node "EXT_CLOCK"
     Warning: Ignored I/O standard assignment to node "GPIO_0[0]"
     Warning: Ignored I/O standard assignment to node "GPIO_0[10]"
@@ -2138,7 +1860,6 @@ Warning: Ignored locations or region assignments to the following nodes
     Warning: Node "CLOCK_24[1]" is assigned to location or region, but does not exist in design
     Warning: Node "CLOCK_27[0]" is assigned to location or region, but does not exist in design
     Warning: Node "CLOCK_27[1]" is assigned to location or region, but does not exist in design
-    Warning: Node "CLOCK_50" is assigned to location or region, but does not exist in design
     Warning: Node "DRAM_ADDR[0]" is assigned to location or region, but does not exist in design
     Warning: Node "DRAM_ADDR[10]" is assigned to location or region, but does not exist in design
     Warning: Node "DRAM_ADDR[11]" is assigned to location or region, but does not exist in design
@@ -2382,20 +2103,21 @@ Info: Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info: Fitter placement operations beginning
 Info: Fitter placement was successful
 Info: Fitter placement operations ending: elapsed time is 00:00:00
-Info: Estimated most critical path is register to register delay of 7.622 ns
-    Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LAB_X42_Y11; Fanout = 3; REG Node = 'Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|register:fiveBitsRegister|out[1]'
-    Info: 2: + IC(0.450 ns) + CELL(0.521 ns) = 0.971 ns; Loc. = LAB_X43_Y11; Fanout = 80; COMB Node = 'Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|multiplexer:Meminst_mux|Output[1]~0'
-    Info: 3: + IC(0.929 ns) + CELL(0.322 ns) = 2.222 ns; Loc. = LAB_X42_Y10; Fanout = 1; COMB Node = 'Lab2:showReselt|dataPath:DP|memRAM:part2|Mux1~12'
-    Info: 4: + IC(0.893 ns) + CELL(0.319 ns) = 3.434 ns; Loc. = LAB_X40_Y10; Fanout = 1; COMB Node = 'Lab2:showReselt|dataPath:DP|memRAM:part2|Mux1~13'
-    Info: 5: + IC(0.729 ns) + CELL(0.521 ns) = 4.684 ns; Loc. = LAB_X40_Y11; Fanout = 1; COMB Node = 'Lab2:showReselt|dataPath:DP|memRAM:part2|Mux1~16'
-    Info: 6: + IC(1.257 ns) + CELL(0.319 ns) = 6.260 ns; Loc. = LAB_X44_Y8; Fanout = 1; COMB Node = 'Lab2:showReselt|dataPath:DP|memRAM:part2|Mux1~19'
-    Info: 7: + IC(0.745 ns) + CELL(0.521 ns) = 7.526 ns; Loc. = LAB_X45_Y11; Fanout = 1; COMB Node = 'Lab2:showReselt|dataPath:DP|memRAM:part2|Mux1~20'
-    Info: 8: + IC(0.000 ns) + CELL(0.096 ns) = 7.622 ns; Loc. = LAB_X45_Y11; Fanout = 3; REG Node = 'Lab2:showReselt|dataPath:DP|memRAM:part2|Q[6]'
-    Info: Total cell delay = 2.619 ns ( 34.36 % )
-    Info: Total interconnect delay = 5.003 ns ( 65.64 % )
+Info: Estimated most critical path is register to register delay of 7.233 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LAB_X26_Y16; Fanout = 17; REG Node = 'Lab2:showReselt|controlUnit:CU|state[3]'
+    Info: 2: + IC(0.560 ns) + CELL(0.178 ns) = 0.738 ns; Loc. = LAB_X26_Y16; Fanout = 7; COMB Node = 'Lab2:showReselt|controlUnit:CU|Meminst~0'
+    Info: 3: + IC(0.498 ns) + CELL(0.178 ns) = 1.414 ns; Loc. = LAB_X26_Y16; Fanout = 74; COMB Node = 'Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|multiplexer:Meminst_mux|Output[3]~3'
+    Info: 4: + IC(0.963 ns) + CELL(0.322 ns) = 2.699 ns; Loc. = LAB_X27_Y18; Fanout = 1; COMB Node = 'Lab2:showReselt|dataPath:DP|memRAM:part2|Mux3~4'
+    Info: 5: + IC(0.588 ns) + CELL(0.319 ns) = 3.606 ns; Loc. = LAB_X26_Y18; Fanout = 1; COMB Node = 'Lab2:showReselt|dataPath:DP|memRAM:part2|Mux3~5'
+    Info: 6: + IC(1.419 ns) + CELL(0.178 ns) = 5.203 ns; Loc. = LAB_X30_Y16; Fanout = 1; COMB Node = 'Lab2:showReselt|dataPath:DP|memRAM:part2|Mux3~6'
+    Info: 7: + IC(0.940 ns) + CELL(0.319 ns) = 6.462 ns; Loc. = LAB_X30_Y18; Fanout = 1; COMB Node = 'Lab2:showReselt|dataPath:DP|memRAM:part2|Mux3~9'
+    Info: 8: + IC(0.131 ns) + CELL(0.544 ns) = 7.137 ns; Loc. = LAB_X30_Y18; Fanout = 1; COMB Node = 'Lab2:showReselt|dataPath:DP|memRAM:part2|Mux3~20'
+    Info: 9: + IC(0.000 ns) + CELL(0.096 ns) = 7.233 ns; Loc. = LAB_X30_Y18; Fanout = 3; REG Node = 'Lab2:showReselt|dataPath:DP|memRAM:part2|Q[4]'
+    Info: Total cell delay = 2.134 ns ( 29.50 % )
+    Info: Total interconnect delay = 5.099 ns ( 70.50 % )
 Info: Fitter routing operations beginning
-Info: Average interconnect usage is 0% of the available device resources
-    Info: Peak interconnect usage is 5% of the available device resources in the region that extends from location X38_Y0 to location X50_Y13
+Info: Average interconnect usage is 1% of the available device resources
+    Info: Peak interconnect usage is 5% of the available device resources in the region that extends from location X25_Y14 to location X37_Y27
 Info: Fitter routing operations ending: elapsed time is 00:00:00
 Info: The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info: Optimizations that may affect the design's routability were skipped
@@ -2423,10 +2145,10 @@ Warning: Found 18 output pins without output pin load capacitance assignment
 Info: Delay annotation completed successfully
 Warning: Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning: The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
-Info: Quartus II Fitter was successful. 0 errors, 392 warnings
+Info: Quartus II Fitter was successful. 0 errors, 390 warnings
     Info: Peak virtual memory: 233 megabytes
-    Info: Processing ended: Mon Dec 21 13:51:47 2015
+    Info: Processing ended: Tue Dec 22 18:23:57 2015
     Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Total CPU time (on all processors): 00:00:04
 
 

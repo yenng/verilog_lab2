@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab2Download
-Mon Dec 21 13:51:32 2015
+Tue Dec 22 18:23:42 2015
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -13,22 +13,19 @@ Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |Lab2Download|Lab2:showReselt|controlUnit:CU|state
-  9. Registers Removed During Synthesis
- 10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: Lab2:showReselt|controlUnit:CU
- 13. Parameter Settings for User Entity Instance: Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|register:eightBitsRegister
- 14. Parameter Settings for User Entity Instance: Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|multiplexer:JMP_mux
- 15. Parameter Settings for User Entity Instance: Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|register:fiveBitsRegister
- 16. Parameter Settings for User Entity Instance: Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|multiplexer:Meminst_mux
- 17. Parameter Settings for User Entity Instance: Lab2:showReselt|dataPath:DP|instructionSetOperation:part3|multiplexer:Asel_mux1
- 18. Parameter Settings for User Entity Instance: Lab2:showReselt|dataPath:DP|instructionSetOperation:part3|multiplexer:Asel_mux2
- 19. Parameter Settings for User Entity Instance: Lab2:showReselt|dataPath:DP|instructionSetOperation:part3|register:ARegister
- 20. Port Connectivity Checks: "Lab2:showReselt|dataPath:DP"
- 21. Port Connectivity Checks: "Lab2:showReselt|controlUnit:CU"
- 22. Analysis & Synthesis Messages
- 23. Analysis & Synthesis Suppressed Messages
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: Lab2:showReselt|controlUnit:CU
+ 11. Parameter Settings for User Entity Instance: Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|register:eightBitsRegister
+ 12. Parameter Settings for User Entity Instance: Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|multiplexer:JMP_mux
+ 13. Parameter Settings for User Entity Instance: Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|register:fiveBitsRegister
+ 14. Parameter Settings for User Entity Instance: Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|multiplexer:Meminst_mux
+ 15. Parameter Settings for User Entity Instance: Lab2:showReselt|dataPath:DP|instructionSetOperation:part3|multiplexer:Asel_mux1
+ 16. Parameter Settings for User Entity Instance: Lab2:showReselt|dataPath:DP|instructionSetOperation:part3|multiplexer:Asel_mux2
+ 17. Parameter Settings for User Entity Instance: Lab2:showReselt|dataPath:DP|instructionSetOperation:part3|register:ARegister
+ 18. Port Connectivity Checks: "Lab2:showReselt|dataPath:DP"
+ 19. Analysis & Synthesis Messages
+ 20. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -54,16 +51,16 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +------------------------------------+-----------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Dec 21 13:51:32 2015   ;
+; Analysis & Synthesis Status        ; Successful - Tue Dec 22 18:23:42 2015   ;
 ; Quartus II Version                 ; 9.1 Build 222 10/21/2009 SJ Web Edition ;
 ; Revision Name                      ; Lab2Download                            ;
 ; Top-level Entity Name              ; Lab2Download                            ;
 ; Family                             ; Cyclone II                              ;
-; Total logic elements               ; 536                                     ;
-;     Total combinational functions  ; 287                                     ;
-;     Dedicated logic registers      ; 296                                     ;
-; Total registers                    ; 296                                     ;
-; Total pins                         ; 30                                      ;
+; Total logic elements               ; 585                                     ;
+;     Total combinational functions  ; 337                                     ;
+;     Dedicated logic registers      ; 322                                     ;
+; Total registers                    ; 322                                     ;
+; Total pins                         ; 31                                      ;
 ; Total virtual pins                 ; 0                                       ;
 ; Total memory bits                  ; 0                                       ;
 ; Embedded Multiplier 9-bit elements ; 0                                       ;
@@ -161,52 +158,53 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                 ;
-+-----------------------------------------+-----------------+------------------------+-------------------------------------------------------------------+
-; File Name with User-Entered Path        ; Used in Netlist ; File Type              ; File Name with Absolute Path                                      ;
-+-----------------------------------------+-----------------+------------------------+-------------------------------------------------------------------+
-; ../dataPath/dataPath.v                  ; yes             ; User Verilog HDL File  ; C:/Users/Student/Desktop/yen/dataPath/dataPath.v                  ;
-; ../dataPath/increment.v                 ; yes             ; User Verilog HDL File  ; C:/Users/Student/Desktop/yen/dataPath/increment.v                 ;
-; ../dataPath/instructionCycleOperation.v ; yes             ; User Verilog HDL File  ; C:/Users/Student/Desktop/yen/dataPath/instructionCycleOperation.v ;
-; ../dataPath/instructionSetOperation.v   ; yes             ; User Verilog HDL File  ; C:/Users/Student/Desktop/yen/dataPath/instructionSetOperation.v   ;
-; ../dataPath/memRam.v                    ; yes             ; User Verilog HDL File  ; C:/Users/Student/Desktop/yen/dataPath/memRam.v                    ;
-; ../dataPath/multiplexer.v               ; yes             ; User Verilog HDL File  ; C:/Users/Student/Desktop/yen/dataPath/multiplexer.v               ;
-; ../dataPath/register.v                  ; yes             ; User Verilog HDL File  ; C:/Users/Student/Desktop/yen/dataPath/register.v                  ;
-; ../dataPath/sub.v                       ; yes             ; User Verilog HDL File  ; C:/Users/Student/Desktop/yen/dataPath/sub.v                       ;
-; ../Lab2/controlUnit.v                   ; yes             ; User Verilog HDL File  ; C:/Users/Student/Desktop/yen/Lab2/controlUnit.v                   ;
-; ../Lab2/Lab2.v                          ; yes             ; User Verilog HDL File  ; C:/Users/Student/Desktop/yen/Lab2/Lab2.v                          ;
-; Lab2Download.v                          ; yes             ; User Verilog HDL File  ; C:/Users/Student/Desktop/yen/Lab2Download/Lab2Download.v          ;
-+-----------------------------------------+-----------------+------------------------+-------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                    ;
++--------------------------------------------+-----------------+------------------------+-------------------------------------------------------------------+
+; File Name with User-Entered Path           ; Used in Netlist ; File Type              ; File Name with Absolute Path                                      ;
++--------------------------------------------+-----------------+------------------------+-------------------------------------------------------------------+
+; ../../dataPath/dataPath.v                  ; yes             ; User Verilog HDL File  ; C:/Users/Student/Desktop/yen/dataPath/dataPath.v                  ;
+; ../../dataPath/increment.v                 ; yes             ; User Verilog HDL File  ; C:/Users/Student/Desktop/yen/dataPath/increment.v                 ;
+; ../../dataPath/instructionCycleOperation.v ; yes             ; User Verilog HDL File  ; C:/Users/Student/Desktop/yen/dataPath/instructionCycleOperation.v ;
+; ../../dataPath/instructionSetOperation.v   ; yes             ; User Verilog HDL File  ; C:/Users/Student/Desktop/yen/dataPath/instructionSetOperation.v   ;
+; ../../dataPath/memRam.v                    ; yes             ; User Verilog HDL File  ; C:/Users/Student/Desktop/yen/dataPath/memRam.v                    ;
+; ../../dataPath/multiplexer.v               ; yes             ; User Verilog HDL File  ; C:/Users/Student/Desktop/yen/dataPath/multiplexer.v               ;
+; ../../dataPath/register.v                  ; yes             ; User Verilog HDL File  ; C:/Users/Student/Desktop/yen/dataPath/register.v                  ;
+; ../../dataPath/sub.v                       ; yes             ; User Verilog HDL File  ; C:/Users/Student/Desktop/yen/dataPath/sub.v                       ;
+; ../controlUnit.v                           ; yes             ; User Verilog HDL File  ; C:/Users/Student/Desktop/yen/Lab2/controlUnit.v                   ;
+; ../Lab2.v                                  ; yes             ; User Verilog HDL File  ; C:/Users/Student/Desktop/yen/Lab2/Lab2.v                          ;
+; Lab2Download.v                             ; yes             ; User Verilog HDL File  ; C:/Users/Student/Desktop/yen/Lab2/Lab2Download/Lab2Download.v     ;
+; slowClock.v                                ; yes             ; User Verilog HDL File  ; C:/Users/Student/Desktop/yen/Lab2/Lab2Download/slowClock.v        ;
++--------------------------------------------+-----------------+------------------------+-------------------------------------------------------------------+
 
 
-+------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary          ;
-+---------------------------------------------+--------+
-; Resource                                    ; Usage  ;
-+---------------------------------------------+--------+
-; Estimated Total logic elements              ; 536    ;
-;                                             ;        ;
-; Total combinational functions               ; 287    ;
-; Logic element usage by number of LUT inputs ;        ;
-;     -- 4 input functions                    ; 227    ;
-;     -- 3 input functions                    ; 24     ;
-;     -- <=2 input functions                  ; 36     ;
-;                                             ;        ;
-; Logic elements by mode                      ;        ;
-;     -- normal mode                          ; 275    ;
-;     -- arithmetic mode                      ; 12     ;
-;                                             ;        ;
-; Total registers                             ; 296    ;
-;     -- Dedicated logic registers            ; 296    ;
-;     -- I/O registers                        ; 0      ;
-;                                             ;        ;
-; I/O pins                                    ; 30     ;
-; Maximum fan-out node                        ; KEY[0] ;
-; Maximum fan-out                             ; 296    ;
-; Total fan-out                               ; 1997   ;
-; Average fan-out                             ; 3.26   ;
-+---------------------------------------------+--------+
++--------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                              ;
++---------------------------------------------+----------------------------+
+; Resource                                    ; Usage                      ;
++---------------------------------------------+----------------------------+
+; Estimated Total logic elements              ; 585                        ;
+;                                             ;                            ;
+; Total combinational functions               ; 337                        ;
+; Logic element usage by number of LUT inputs ;                            ;
+;     -- 4 input functions                    ; 216                        ;
+;     -- 3 input functions                    ; 55                         ;
+;     -- <=2 input functions                  ; 66                         ;
+;                                             ;                            ;
+; Logic elements by mode                      ;                            ;
+;     -- normal mode                          ; 294                        ;
+;     -- arithmetic mode                      ; 43                         ;
+;                                             ;                            ;
+; Total registers                             ; 322                        ;
+;     -- Dedicated logic registers            ; 322                        ;
+;     -- I/O registers                        ; 0                          ;
+;                                             ;                            ;
+; I/O pins                                    ; 31                         ;
+; Maximum fan-out node                        ; slowClock:clockOut|outX[0] ;
+; Maximum fan-out                             ; 290                        ;
+; Total fan-out                               ; 2187                       ;
+; Average fan-out                             ; 3.17                       ;
++---------------------------------------------+----------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -214,10 +212,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                 ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                  ; Library Name ;
 +--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------+--------------+
-; |Lab2Download                              ; 287 (2)           ; 296 (0)      ; 0           ; 0            ; 0       ; 0         ; 30   ; 0            ; |Lab2Download                                                                                        ; work         ;
-;    |Lab2:showReselt|                       ; 285 (0)           ; 296 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab2Download|Lab2:showReselt                                                                        ;              ;
-;       |controlUnit:CU|                     ; 17 (17)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab2Download|Lab2:showReselt|controlUnit:CU                                                         ;              ;
-;       |dataPath:DP|                        ; 268 (0)           ; 285 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab2Download|Lab2:showReselt|dataPath:DP                                                            ;              ;
+; |Lab2Download                              ; 337 (0)           ; 322 (0)      ; 0           ; 0            ; 0       ; 0         ; 31   ; 0            ; |Lab2Download                                                                                        ; work         ;
+;    |Lab2:showReselt|                       ; 292 (0)           ; 289 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab2Download|Lab2:showReselt                                                                        ;              ;
+;       |controlUnit:CU|                     ; 22 (22)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab2Download|Lab2:showReselt|controlUnit:CU                                                         ;              ;
+;       |dataPath:DP|                        ; 270 (0)           ; 285 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab2Download|Lab2:showReselt|dataPath:DP                                                            ;              ;
 ;          |instructionCycleOperation:part1| ; 10 (0)            ; 13 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab2Download|Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1                            ;              ;
 ;             |multiplexer:Meminst_mux|      ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab2Download|Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|multiplexer:Meminst_mux    ;              ;
 ;             |register:eightBitsRegister|   ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab2Download|Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|register:eightBitsRegister ;              ;
@@ -225,42 +223,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;          |instructionSetOperation:part3|   ; 25 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab2Download|Lab2:showReselt|dataPath:DP|instructionSetOperation:part3                              ;              ;
 ;             |register:ARegister|           ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab2Download|Lab2:showReselt|dataPath:DP|instructionSetOperation:part3|register:ARegister           ;              ;
 ;             |sub:add_sub|                  ; 17 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab2Download|Lab2:showReselt|dataPath:DP|instructionSetOperation:part3|sub:add_sub                  ;              ;
-;          |memRAM:part2|                    ; 233 (233)         ; 264 (264)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2                                               ;              ;
+;          |memRAM:part2|                    ; 235 (235)         ; 264 (264)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2                                               ;              ;
+;    |slowClock:clockOut|                    ; 45 (45)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab2Download|slowClock:clockOut                                                                     ;              ;
 +--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-Encoding Type:  One-Hot
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |Lab2Download|Lab2:showReselt|controlUnit:CU|state                                                                                            ;
-+--------------+------------+------------+----------+-------------+-----------+-----------+-------------+------------+--------------+-------------+-------------+
-; Name         ; state.halt ; state.jpos ; state.jz ; state.Input ; state.sub ; state.add ; state.store ; state.load ; state.decode ; state.fetch ; state.start ;
-+--------------+------------+------------+----------+-------------+-----------+-----------+-------------+------------+--------------+-------------+-------------+
-; state.start  ; 0          ; 0          ; 0        ; 0           ; 0         ; 0         ; 0           ; 0          ; 0            ; 0           ; 0           ;
-; state.fetch  ; 0          ; 0          ; 0        ; 0           ; 0         ; 0         ; 0           ; 0          ; 0            ; 1           ; 1           ;
-; state.decode ; 0          ; 0          ; 0        ; 0           ; 0         ; 0         ; 0           ; 0          ; 1            ; 0           ; 1           ;
-; state.load   ; 0          ; 0          ; 0        ; 0           ; 0         ; 0         ; 0           ; 1          ; 0            ; 0           ; 1           ;
-; state.store  ; 0          ; 0          ; 0        ; 0           ; 0         ; 0         ; 1           ; 0          ; 0            ; 0           ; 1           ;
-; state.add    ; 0          ; 0          ; 0        ; 0           ; 0         ; 1         ; 0           ; 0          ; 0            ; 0           ; 1           ;
-; state.sub    ; 0          ; 0          ; 0        ; 0           ; 1         ; 0         ; 0           ; 0          ; 0            ; 0           ; 1           ;
-; state.Input  ; 0          ; 0          ; 0        ; 1           ; 0         ; 0         ; 0           ; 0          ; 0            ; 0           ; 1           ;
-; state.jz     ; 0          ; 0          ; 1        ; 0           ; 0         ; 0         ; 0           ; 0          ; 0            ; 0           ; 1           ;
-; state.jpos   ; 0          ; 1          ; 0        ; 0           ; 0         ; 0         ; 0           ; 0          ; 0            ; 0           ; 1           ;
-; state.halt   ; 1          ; 0          ; 0        ; 0           ; 0         ; 0         ; 0           ; 0          ; 0            ; 0           ; 1           ;
-+--------------+------------+------------+----------+-------------+-----------+-----------+-------------+------------+--------------+-------------+-------------+
-
-
-+-------------------------------------------------------------+
-; Registers Removed During Synthesis                          ;
-+----------------------------------------+--------------------+
-; Register name                          ; Reason for Removal ;
-+----------------------------------------+--------------------+
-; Lab2:showReselt|controlUnit:CU|state~4 ; Lost fanout        ;
-; Lab2:showReselt|controlUnit:CU|state~5 ; Lost fanout        ;
-; Lab2:showReselt|controlUnit:CU|state~6 ; Lost fanout        ;
-; Lab2:showReselt|controlUnit:CU|state~7 ; Lost fanout        ;
-; Total Number of Removed Registers = 4  ;                    ;
-+----------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -268,10 +234,10 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 296   ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 322   ;
+; Number of registers using Synchronous Clear  ; 32    ;
 ; Number of registers using Synchronous Load   ; 13    ;
-; Number of registers using Asynchronous Clear ; 32    ;
+; Number of registers using Asynchronous Clear ; 25    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 285   ;
 ; Number of registers using Preset             ; 0     ;
@@ -284,27 +250,28 @@ Encoding Type:  One-Hot
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------+
 ; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|instructionSetOperation:part3|register:ARegister|out[0] ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[31][4]                            ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[30][5]                            ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[17][5]                            ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[16][5]                            ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[15][3]                            ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[31][3]                            ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[30][7]                            ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[17][7]                            ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[16][3]                            ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[15][2]                            ;
 ; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[14][1]                            ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[13][4]                            ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[12][6]                            ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[11][4]                            ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[10][4]                            ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[9][4]                             ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[8][1]                             ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[7][1]                             ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[13][5]                            ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[12][5]                            ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[11][7]                            ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[10][1]                            ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[9][2]                             ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[8][6]                             ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[7][2]                             ;
 ; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[6][3]                             ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[5][0]                             ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[4][6]                             ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[3][4]                             ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[5][6]                             ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[4][2]                             ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[3][3]                             ;
 ; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[2][3]                             ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[1][3]                             ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[0][2]                             ;
-; 32:1               ; 8 bits    ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|Q[7]                                       ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[1][6]                             ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|REGISTER[0][1]                             ;
+; 16:1               ; 2 bits    ; 20 LEs        ; 12 LEs               ; 8 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|controlUnit:CU|state[0]                                             ;
+; 32:1               ; 8 bits    ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; Yes        ; |Lab2Download|Lab2:showReselt|dataPath:DP|memRAM:part2|Q[5]                                       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------+
 
 
@@ -408,22 +375,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Lab2:showReselt|controlUnit:CU"                                                             ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port         ; Type   ; Severity ; Details                                                                             ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------+
-; displayState ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
-    Info: Processing started: Mon Dec 21 13:51:29 2015
+    Info: Processing started: Tue Dec 22 18:23:40 2015
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab2Download -c Lab2Download
 Info: Found 1 design units, including 1 entities, in source file /users/student/desktop/yen/datapath/datapath.v
     Info: Found entity 1: dataPath
@@ -447,12 +405,36 @@ Info: Found 1 design units, including 1 entities, in source file /users/student/
     Info: Found entity 1: Lab2
 Info: Found 1 design units, including 1 entities, in source file lab2download.v
     Info: Found entity 1: Lab2Download
+Info: Found 1 design units, including 1 entities, in source file slowclock.v
+    Info: Found entity 1: slowClock
 Info: Elaborating entity "Lab2Download" for the top level hierarchy
-Warning (10034): Output port "LEDR[8]" at Lab2Download.v(4) has no driver
-Warning (10034): Output port "LEDG[3]" at Lab2Download.v(6) has no driver
+Warning (10034): Output port "LEDR[8]" at Lab2Download.v(5) has no driver
+Warning (10034): Output port "LEDG[3]" at Lab2Download.v(7) has no driver
+Info: Elaborating entity "slowClock" for hierarchy "slowClock:clockOut"
 Info: Elaborating entity "Lab2" for hierarchy "Lab2:showReselt"
-Warning (10034): Output port "displayState" at Lab2.v(6) has no driver
 Info: Elaborating entity "controlUnit" for hierarchy "Lab2:showReselt|controlUnit:CU"
+Warning (10230): Verilog HDL assignment warning at controlUnit.v(15): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at controlUnit.v(25): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at controlUnit.v(29): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at controlUnit.v(34): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at controlUnit.v(35): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at controlUnit.v(36): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at controlUnit.v(37): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at controlUnit.v(38): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at controlUnit.v(39): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at controlUnit.v(40): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at controlUnit.v(41): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at controlUnit.v(42): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at controlUnit.v(47): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at controlUnit.v(51): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at controlUnit.v(55): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at controlUnit.v(59): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at controlUnit.v(64): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at controlUnit.v(66): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at controlUnit.v(71): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at controlUnit.v(76): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at controlUnit.v(80): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at controlUnit.v(84): truncated value with size 32 to match size of target (4)
 Info: Elaborating entity "dataPath" for hierarchy "Lab2:showReselt|dataPath:DP"
 Info: Elaborating entity "instructionCycleOperation" for hierarchy "Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1"
 Info: Elaborating entity "register" for hierarchy "Lab2:showReselt|dataPath:DP|instructionCycleOperation:part1|register:eightBitsRegister"
@@ -467,30 +449,23 @@ Info: Elaborating entity "sub" for hierarchy "Lab2:showReselt|dataPath:DP|instru
 Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[8]" is stuck at GND
     Warning (13410): Pin "LEDG[3]" is stuck at GND
-    Warning (13410): Pin "LEDG[4]" is stuck at GND
-    Warning (13410): Pin "LEDG[5]" is stuck at GND
-    Warning (13410): Pin "LEDG[6]" is stuck at GND
-    Warning (13410): Pin "LEDG[7]" is stuck at GND
-Info: 4 registers lost all their fanouts during netlist optimizations. The first 4 are displayed below.
-    Info: Register "Lab2:showReselt|controlUnit:CU|state~4" lost all its fanouts during netlist optimizations.
-    Info: Register "Lab2:showReselt|controlUnit:CU|state~5" lost all its fanouts during netlist optimizations.
-    Info: Register "Lab2:showReselt|controlUnit:CU|state~6" lost all its fanouts during netlist optimizations.
-    Info: Register "Lab2:showReselt|controlUnit:CU|state~7" lost all its fanouts during netlist optimizations.
-Info: Generated suppressed messages file C:/Users/Student/Desktop/yen/Lab2Download/Lab2Download.map.smsg
-Info: Implemented 582 device resources after synthesis - the final resource count might be different
-    Info: Implemented 12 input pins
+Info: Generated suppressed messages file C:/Users/Student/Desktop/yen/Lab2/Lab2Download/Lab2Download.map.smsg
+Warning: Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "KEY[0]"
+Info: Implemented 632 device resources after synthesis - the final resource count might be different
+    Info: Implemented 13 input pins
     Info: Implemented 18 output pins
-    Info: Implemented 552 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Implemented 601 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 31 warnings
     Info: Peak virtual memory: 196 megabytes
-    Info: Processing ended: Mon Dec 21 13:51:32 2015
-    Info: Elapsed time: 00:00:03
+    Info: Processing ended: Tue Dec 22 18:23:42 2015
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/Student/Desktop/yen/Lab2Download/Lab2Download.map.smsg.
+The suppressed messages can be found in C:/Users/Student/Desktop/yen/Lab2/Lab2Download/Lab2Download.map.smsg.
 
 

@@ -3,10 +3,10 @@ module controlUnit(
 	input Enter, Aeq0, Apos, clock, reset,		//Aeq0 and Apos is value of part of PCload.
 	output reg IRload, JMPmux, PCload, Meminst, MemWr, Aload, Sub, Halt,	//status signal
 	output reg [1:0] Asel,													//status signal
-	output wire [3:0] displayState										//state
+	output reg [3:0] state													//state
 	);
 	
-	reg [3:0] nextstate,state;
+	reg [3:0] nextstate;
 	parameter start = 0, fetch = 1, decode = 2, load = 8, store = 9, add = 10, sub = 11, Input = 12, jz = 13, jpos = 14, halt = 15;
 	
 	always@(posedge clock, posedge reset) 	//Control the changing of state by using clock.
@@ -85,5 +85,5 @@ module controlUnit(
 				end
 		endcase
 	end
-	assign displayState = state;
+//	assign displayState = state;
 endmodule 

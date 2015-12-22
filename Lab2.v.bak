@@ -3,7 +3,7 @@ module Lab2(
 	input [7:0]	Input,
 	output	Halt,
 	output [7:0] Output,												
-	output [3:0] displayState,
+	output wire [3:0] displayState,
 	output wire [2:0]	IR
 );
 	

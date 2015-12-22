@@ -1,4 +1,5 @@
 |Lab2Download
+CLOCK_50 => CLOCK_50.IN1
 SW[0] => SW[0].IN1
 SW[1] => SW[1].IN1
 SW[2] => SW[2].IN1
@@ -9,7 +10,7 @@ SW[6] => SW[6].IN1
 SW[7] => SW[7].IN1
 SW[8] => SW[8].IN1
 SW[9] => SW[9].IN1
-KEY[0] => KEY[0].IN1
+KEY[0] => ~NO_FANOUT~
 KEY[1] => KEY[1].IN1
 LEDR[0] <= Lab2:showReselt.port6
 LEDR[1] <= Lab2:showReselt.port6
@@ -29,6 +30,43 @@ LEDG[4] <= Lab2:showReselt.port7
 LEDG[5] <= Lab2:showReselt.port7
 LEDG[6] <= Lab2:showReselt.port7
 LEDG[7] <= Lab2:showReselt.port7
+
+
+|Lab2Download|slowClock:clockOut
+CLOCK_50 => outX[0]~reg0.CLK
+CLOCK_50 => i[0].CLK
+CLOCK_50 => i[1].CLK
+CLOCK_50 => i[2].CLK
+CLOCK_50 => i[3].CLK
+CLOCK_50 => i[4].CLK
+CLOCK_50 => i[5].CLK
+CLOCK_50 => i[6].CLK
+CLOCK_50 => i[7].CLK
+CLOCK_50 => i[8].CLK
+CLOCK_50 => i[9].CLK
+CLOCK_50 => i[10].CLK
+CLOCK_50 => i[11].CLK
+CLOCK_50 => i[12].CLK
+CLOCK_50 => i[13].CLK
+CLOCK_50 => i[14].CLK
+CLOCK_50 => i[15].CLK
+CLOCK_50 => i[16].CLK
+CLOCK_50 => i[17].CLK
+CLOCK_50 => i[18].CLK
+CLOCK_50 => i[19].CLK
+CLOCK_50 => i[20].CLK
+CLOCK_50 => i[21].CLK
+CLOCK_50 => i[22].CLK
+CLOCK_50 => i[23].CLK
+CLOCK_50 => i[24].CLK
+CLOCK_50 => i[25].CLK
+CLOCK_50 => i[26].CLK
+CLOCK_50 => i[27].CLK
+CLOCK_50 => i[28].CLK
+CLOCK_50 => i[29].CLK
+CLOCK_50 => i[30].CLK
+CLOCK_50 => i[31].CLK
+outX[0] <= outX[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Lab2Download|Lab2:showReselt
@@ -53,39 +91,45 @@ Output[4] <= dataPath:DP.port16
 Output[5] <= dataPath:DP.port16
 Output[6] <= dataPath:DP.port16
 Output[7] <= dataPath:DP.port16
-displayState[0] <= <GND>
-displayState[1] <= <GND>
-displayState[2] <= <GND>
-displayState[3] <= <GND>
+state[0] <= controlUnit:CU.port15
+state[1] <= controlUnit:CU.port15
+state[2] <= controlUnit:CU.port15
+state[3] <= controlUnit:CU.port15
 IR[0] <= IR[0].DB_MAX_OUTPUT_PORT_TYPE
 IR[1] <= IR[1].DB_MAX_OUTPUT_PORT_TYPE
 IR[2] <= IR[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Lab2Download|Lab2:showReselt|controlUnit:CU
-IR[0] => Decoder0.IN2
-IR[1] => Decoder0.IN1
-IR[2] => Decoder0.IN0
-Enter => Selector1.IN4
-Enter => Selector2.IN2
-Aeq0 => Selector0.IN3
-Apos => Selector0.IN4
-clock => state~1.DATAIN
-reset => state~3.DATAIN
-IRload <= IRload.DB_MAX_OUTPUT_PORT_TYPE
+IR[0] => Mux4.IN15
+IR[1] => Mux3.IN15
+IR[2] => Mux2.IN15
+Enter => Mux1.IN15
+Enter => Mux2.IN14
+Aeq0 => Mux0.IN14
+Apos => Mux0.IN15
+clock => state[0]~reg0.CLK
+clock => state[1]~reg0.CLK
+clock => state[2]~reg0.CLK
+clock => state[3]~reg0.CLK
+reset => state[0]~reg0.ACLR
+reset => state[1]~reg0.ACLR
+reset => state[2]~reg0.ACLR
+reset => state[3]~reg0.ACLR
+IRload <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
 JMPmux <= JMPmux.DB_MAX_OUTPUT_PORT_TYPE
-PCload <= Selector0.DB_MAX_OUTPUT_PORT_TYPE
+PCload <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Meminst <= Meminst.DB_MAX_OUTPUT_PORT_TYPE
-MemWr <= MemWr.DB_MAX_OUTPUT_PORT_TYPE
-Aload <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
-Sub <= Sub.DB_MAX_OUTPUT_PORT_TYPE
-Halt <= Halt.DB_MAX_OUTPUT_PORT_TYPE
-Asel[0] <= Asel[0].DB_MAX_OUTPUT_PORT_TYPE
-Asel[1] <= Asel[1].DB_MAX_OUTPUT_PORT_TYPE
-displayState[0] <= WideOr9.DB_MAX_OUTPUT_PORT_TYPE
-displayState[1] <= WideOr8.DB_MAX_OUTPUT_PORT_TYPE
-displayState[2] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
-displayState[3] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+MemWr <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Aload <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+Sub <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Halt <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Asel[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Asel[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+state[0] <= state[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[1] <= state[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[2] <= state[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[3] <= state[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Lab2Download|Lab2:showReselt|dataPath:DP

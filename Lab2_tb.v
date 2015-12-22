@@ -72,7 +72,7 @@ module Lab2_tb();
 		  $display("FAILED!!!! Expected output = %d, Actual output = %d, No. of Error = %d", expectedValue, Output, error);
 		end
 		else
-		  $display("SIMULATION SUCCESSFULL %d times", (i + 1));
+		  $display("SIMULATION SUCCESSFULL %d times. Output = %d.", (i + 1), Output);
 
 	end
 	endtask
